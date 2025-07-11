@@ -2,8 +2,8 @@
 ! Title: 几十KB的轻量规则
 ! Homepage: https://github.com/damengzhu/banad
 ! by: ParkCR
-! Total Count: 2
-! Update Time:2025-07-11 21:42:06（北京时间）
+! Total Count: 10
+! Update Time: 2025-07-11 21:45:54（北京时间）
 !爱TY影视的暂停广告以及优惠导航
 ||*.atyv.cn^
 ! 2025年7月10日 kpkuang
