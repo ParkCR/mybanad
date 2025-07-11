@@ -42,8 +42,7 @@ jobs:
 
           
 
-      - name: Manual-Update AdRules Repository
-
+      - name: Refresh jsDelivr cache for all txt files
         run: |
-
-          bash ./manual-update.sh
+          sleep 10
+          curl "https://purge.jsdelivr.net/gh/${{github.repository}}/*.txt"
