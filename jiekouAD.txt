@@ -4,14 +4,15 @@
 ! by: ParkCR
 ! Total Count: 10
 ! Update Time: 2025-07-11 21:45:54（北京时间）
-!爱TY影视的暂停广告以及优惠导航
+! 爱TY影视的暂停广告以及优惠导航
 ||*.atyv.cn^
+
 ! 2025年7月10日 kpkuang
-# 匹配 www.kpkuang.xxx 格式的域名
+! 匹配 www.kpkuang.xxx 格式的域名
 www.kpkuang.*##.uk-alert.fed-show-md-block.fed-hide-sm.fed-hide-xs.fed-back-whits.fed-part-layout
-# 匹配 kpkuang.xxx 和 kpkuang.netlify.app 格式的域名
+! 匹配 kpkuang.xxx 和 kpkuang.netlify.app 格式的域名
 kpkuang.*##.uk-alert.fed-show-md-block.fed-hide-sm.fed-hide-xs.fed-back-whits.fed-part-layout
-# kpkuang的赌博视频
+! kpkuang的赌博视频
 ||ggasset.ethersaga.online^
 
 ! 2025年7月10日 https://www.zxzjys.com 在线之家
