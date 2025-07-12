@@ -1,0 +1,6 @@
+#Title: 几十KB的轻量规则
+#Homepage: https://github.com/damengzhu/banad
+#by: ParkCR
+#Total Count: 1
+#Update Time: 2025-07-12 22:19:15（北京时间）
+ggasset.ethersaga.online = 0.0.0.0
