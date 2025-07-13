@@ -17,3 +17,6 @@ kpkuang.*##.uk-alert.fed-show-md-block.fed-hide-sm.fed-hide-xs.fed-back-whits.fe
 
 ! 2025年7月10日 https://www.zxzjys.com 在线之家
 /^https:\/\/(www\.)?zxzjys\.com\/[0-9]+\.gif/$from=zxzjys.com
+
+! 2025年7月13日 手机影视APP开屏广告
+||*.021huaying.com^
