@@ -1,0 +1,14 @@
+#Title: 几十KB的轻量规则
+#Homepage: https://github.com/damengzhu/banad
+#by: ParkCR
+#Total Count: 1
+#Update Time: 2025-07-13 19:21:29（北京时间）
+DOMAIN,ggasset.ethersaga.online
+#kkys开屏
+DOMAIN,vres.dsty8.com
+DOMAIN,vres.dsty9.com
+DOMAIN,vres.dsty10.com
+DOMAIN,vres.dsty11.com
+DOMAIN-SUFFIX,atyv.cn
+DOMAIN-SUFFIX,021huaying.com
+DOMAIN-SUFFIX,u361bpkc.com
