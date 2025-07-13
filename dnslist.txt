@@ -3,6 +3,6 @@
 ! Homepage: https://github.com/damengzhu/banad
 ! by: ParkCR
 ! Total Count: 2
-! Update Time:2025-07-12 22:19:15（北京时间）
+! Update Time:2025-07-13 14:42:25（北京时间）
 ||*.atyv.cn^
 ||ggasset.ethersaga.online^
