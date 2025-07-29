@@ -20,3 +20,26 @@ kpkuang.*##.uk-alert.fed-show-md-block.fed-hide-sm.fed-hide-xs.fed-back-whits.fe
 
 ! 2025年7月13日 手机影视APP开屏广告
 ||*.021huaying.com^
+
+! 2025年7月21日 https://www.heye.kr
+||i.imgur.com/MeZn9b6.jpeg$image
+||i.imgur.com/427ybBh.jpeg$image
+||i.imgur.com/tq7Ix9e.jpeg$image
+www.heye.kr###banner_949 > .banner_image_0
+www.heye.kr###top_right > .first.banner-wrap
+
+! 2025年7月24日 https://etoland.co.kr
+etoland.co.kr##.etoad_under_goods
+||www.mediacategory.com/servlet/adBanner$subdocument
+etoland.co.kr##.banner-box
+etoland.co.kr###login_popup
+
+! 2025年7月28日 https://beeg-2025075.xxavx11.com
+||aliyun.png-0329.ccjjdwt.com^
+||5rfh44h5.cc^
+
+! 2025年7月29日 https://eporner-2025065.xxavx11.com
+||h9lcd7ks.cc^
+
+! 2025年7月29日 https://spankbang.com
+spankbang.com##.vjs-paused-banner-ad-container
