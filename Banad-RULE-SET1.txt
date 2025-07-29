@@ -13,6 +13,7 @@ DOMAIN,vres.dsty9.com
 DOMAIN,vres.dsty10.com
 DOMAIN,vres.dsty11.com
 DOMAIN,vres.dsty12.com
+DOMAIN,vres.kvod7.com
 DOMAIN-SUFFIX,atyv.cn
 DOMAIN-SUFFIX,021huaying.com
 DOMAIN-SUFFIX,u361bpkc.com
