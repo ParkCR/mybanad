@@ -1,6 +1,9 @@
 #Title: 几十KB的轻量规则
 #Homepage: https://github.com/damengzhu/banad
 #by: ParkCR
-#Total Count: 1
-#Update Time: 2025-07-13 19:37:57（北京时间）
+#Total Count: 4
+#Update Time: 2025-07-29 22:50:09（北京时间）
+DOMAIN,5rfh44h5.cc
+DOMAIN,aliyun.png-0329.ccjjdwt.com
 DOMAIN,ggasset.ethersaga.online
+DOMAIN,h9lcd7ks.cc
