@@ -3,7 +3,7 @@
 ! Homepage: https://github.com/damengzhu/banad
 ! by: ParkCR
 ! Total Count: 28
-! Update Time: 2025-07-29 22:50:09（北京时间）
+! Update Time: 2025-07-29 23:03:14（北京时间）
 ! 爱TY影视的暂停广告以及优惠导航
 ||*.atyv.cn^
 
