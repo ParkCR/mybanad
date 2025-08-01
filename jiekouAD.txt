@@ -34,6 +34,13 @@ etoland.co.kr##.etoad_under_goods
 etoland.co.kr##.banner-box
 etoland.co.kr###login_popup
 
+! 2025年7月29日 https://spankbang.com
+spankbang.com##.vjs-paused-banner-ad-container
+
+! 2025年7月30日 https://dpple.net
+dpple.net##.panel-heading
+dpple.net##center:nth-of-type(2)
+
 ! 2025年7月28日 https://beeg-2025075.xxavx11.com
 ||aliyun.png-0329.ccjjdwt.com^
 ||5rfh44h5.cc^
@@ -41,5 +48,8 @@ etoland.co.kr###login_popup
 ! 2025年7月29日 https://eporner-2025065.xxavx11.com
 ||h9lcd7ks.cc^
 
-! 2025年7月29日 https://spankbang.com
-spankbang.com##.vjs-paused-banner-ad-container
+! 2025年8月1日 https://pornhub-2025075.xxavx11.com
+||vnsimg.hfzkgw.com^
+
+
+
