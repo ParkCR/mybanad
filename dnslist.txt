@@ -2,11 +2,12 @@
 ! Title: 几十KB的轻量规则
 ! Homepage: https://github.com/damengzhu/banad
 ! by: ParkCR
-! Total Count: 6
-! Update Time:2025-07-30 08:42:19（北京时间）
+! Total Count: 7
+! Update Time:2025-08-01 10:57:53（北京时间）
 ||*.021huaying.com^
 ||*.atyv.cn^
 ||5rfh44h5.cc^
 ||aliyun.png-0329.ccjjdwt.com^
 ||ggasset.ethersaga.online^
 ||h9lcd7ks.cc^
+||vnsimg.hfzkgw.com^
