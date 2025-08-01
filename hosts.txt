@@ -2,7 +2,7 @@
 #Homepage: https://github.com/damengzhu/banad
 #by: ParkCR
 #Total Count: 23
-#Update Time: 2025-08-01 11:02:10（北京时间）
+#Update Time: 2025-08-01 21:39:01（北京时间）
 127.0.0.1 localhost
 ::1 localhost
 0.0.0.0 5rfh44h5.cc
