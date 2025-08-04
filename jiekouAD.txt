@@ -1,25 +1,24 @@
-[Adblock Plus 2.0]
-! Title: 几十KB的轻量规则
-! Homepage: https://github.com/damengzhu/banad
-! by: ParkCR
-! Total Count: 36
-! Update Time: 2025-08-01 21:39:01（北京时间）
-! 爱TY影视的暂停广告以及优惠导航
+! 2023-01-30 https://97mm.cc
+||97mm.cc/A12.gif$image
+||97mm.cc/A11.gif$image
+!爱TY影视的暂停广告以及优惠导航
 ||*.atyv.cn^
 
+
+
 ! 2025年7月10日 kpkuang
-! 匹配 www.kpkuang.xxx 格式的域名
+# 匹配 www.kpkuang.xxx 格式的域名
 www.kpkuang.*##.uk-alert.fed-show-md-block.fed-hide-sm.fed-hide-xs.fed-back-whits.fed-part-layout
-! 匹配 kpkuang.xxx 和 kpkuang.netlify.app 格式的域名
+# 匹配 kpkuang.xxx 和 kpkuang.netlify.app 格式的域名
 kpkuang.*##.uk-alert.fed-show-md-block.fed-hide-sm.fed-hide-xs.fed-back-whits.fed-part-layout
-! kpkuang的赌博视频
+# kpkuang的赌博视频
 ||ggasset.ethersaga.online^
 
 ! 2025年7月10日 https://www.zxzjys.com 在线之家
 /^https:\/\/(www\.)?zxzjys\.com\/[0-9]+\.gif/$from=zxzjys.com
 
 ! 2025年7月13日 手机影视APP开屏广告
-||*.021huaying.com^
+||021huaying.com^
 
 ! 2025年7月21日 https://www.heye.kr
 ||i.imgur.com/MeZn9b6.jpeg$image
@@ -41,15 +40,48 @@ spankbang.com##.vjs-paused-banner-ad-container
 dpple.net##.panel-heading
 dpple.net##center:nth-of-type(2)
 
-! 2025年7月28日 https://beeg-2025075.xxavx11.com
+
+! 2025年8月1日 https://yandex.ru
+! yandex.ru##.bAlMSMJhT7LIK-Card_bLXE1LZNbz7cO.bAlMSMJhT7LIK-Card
+
+! 2025年8月4日 https://av19.live
+av19.live##.mobile-banner.col-md-12
+av19.live###next-to-video-2
+av19.live##.sidebar-ads
+||av19.live/data/banner/
+||david.cdnbuzz.buzz/banner/
+
+! 2025年8月微博广告屏蔽规则（全面版）
+
+! 基础规则 - 屏蔽所有带广告标记的微博
+weibo.com##article:has(.wbpro-tag)
+weibo.com##.Feed_body_3R0rO:has(.wbpro-tag)
+
+! 补充规则 - 覆盖更多广告变体
+weibo.com##[data-index]:has(.wbpro-tag)
+weibo.com##.vue-recycle-scroller__item-view:has(.wbpro-tag)
+weibo.com##.card-wrap:has(.wbpro-tag)
+
+! 针对特定广告类型的强化规则
+weibo.com##.wbpro-tag:has-text(/荐读|推荐|粉丝头条|品牌联动/)
+weibo.com##.head-info_tag_3iMJw
+weibo.com##.wbpro-tag-c2
+
+! 屏蔽推广链接和视频广告
+weibo.com##a[href*="weiboad"]
+weibo.com##.card-video[data-mark*="ad"]
+
+! 2025年8月2日 神级导航的广告导航栏
+
+/\w+-\d+\.xxavx\d+\.com/##.streamer-container2
+
+! 2025年8月2日 神级导航的广告导航栏图片域名
 ||aliyun.png-0329.ccjjdwt.com^
 ||5rfh44h5.cc^
-
-! 2025年7月29日 https://eporner-2025065.xxavx11.com
 ||h9lcd7ks.cc^
-
-! 2025年8月1日 https://pornhub-2025075.xxavx11.com
 ||vnsimg.hfzkgw.com^
+||img.jmyqsl.com^
 
-
+! 2025年8月2日 https://ton45.top
+||tp.suppercacheimages.top^
 
