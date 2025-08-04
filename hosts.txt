@@ -1,14 +1,17 @@
 #Title: 几十KB的轻量规则
 #Homepage: https://github.com/damengzhu/banad
 #by: ParkCR
-#Total Count: 23
-#Update Time: 2025-08-01 21:39:01（北京时间）
+#Total Count: 26
+#Update Time: 2025-08-04 18:34:47（北京时间）
 127.0.0.1 localhost
 ::1 localhost
+0.0.0.0 021huaying.com
 0.0.0.0 5rfh44h5.cc
 0.0.0.0 aliyun.png-0329.ccjjdwt.com
 0.0.0.0 ggasset.ethersaga.online
 0.0.0.0 h9lcd7ks.cc
+0.0.0.0 img.jmyqsl.com
+0.0.0.0 tp.suppercacheimages.top
 0.0.0.0 vnsimg.hfzkgw.com
 #Reserved area start
 ## hosts does not support wildcard
