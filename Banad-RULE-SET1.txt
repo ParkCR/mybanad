@@ -22,5 +22,5 @@ DOMAIN-SUFFIX,atyv.cn
 DOMAIN-SUFFIX,021huaying.com
 DOMAIN-SUFFIX,u361bpkc.com
 
-#酷狗概念版开屏
-DOMAIN,kugroup.mobile.kugou.com
+#有道云笔记开屏
+DOMAIN-SUFFIX,lx.netease.com
