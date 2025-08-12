@@ -2,7 +2,7 @@
 #Homepage: https://github.com/damengzhu/banad
 #by: ParkCR
 #Total Count: 8
-#Update Time: 2025-08-04 18:34:47（北京时间）
+#Update Time: 2025-08-12 22:34:47（北京时间）
 DOMAIN,021huaying.com
 DOMAIN,5rfh44h5.cc
 DOMAIN,aliyun.png-0329.ccjjdwt.com
@@ -23,7 +23,5 @@ DOMAIN-SUFFIX,021huaying.com
 DOMAIN-SUFFIX,u361bpkc.com
 
 #有道云笔记开屏
-DOMAIN-SUFFIX,lx.netease.com
+#DOMAIN-SUFFIX,lx.netease.com
 
-#网易云音乐开屏
-DOMAIN,interface3.music.163.com
