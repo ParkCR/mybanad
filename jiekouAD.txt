@@ -85,3 +85,34 @@ weibo.com##.card-video[data-mark*="ad"]
 ! 2025年8月2日 https://ton45.top
 ||tp.suppercacheimages.top^
 
+! 2025年8月6日 https://nikkanerog.com
+nikkanerog.com###mainBlock > .mainEntryBase
+nikkanerog.com##.mainEntryHead
+
+! 2025年8月9日 https://ch.sooplive.co.kr
+ch.sooplive.co.kr##.bs-notice_layer
+
+! 2025年8月9日 https://24post.co.kr
+24post.co.kr##.footer_text
+
+! 2025年8月11日 https://2chav.com
+2chav.com##.p3_uekotei
+2chav.com##.plugin3_outline
+
+! 2025年8月12日 https://www.heye.kr
+www.heye.kr###box_type20
+
+! 2025年8月12日 https://netflav.com
+netflav.com##.ads_video_overlay_iframe
+
+! 2025年8月12日 https://twitchav.com
+twitchav.com,netflav.tv,lijav.com##.ads_head_banner_container
+
+! twitchav.com##.ads_head_banner_container
+! netflav.tv##.ads_head_banner_container
+! lijav.com##.ads_head_banner_container
+
+! 2025年8月12日 https://avtoday.io
+avtoday.io##div.pt-3.row:nth-of-type(4)
+avtoday.io##div.pt-3.row:nth-of-type(8)
+
