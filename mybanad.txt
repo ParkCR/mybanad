@@ -2,7 +2,7 @@
 #Homepage: https://github.com/damengzhu/banad
 #by: ParkCR
 #Total Count: 8
-#Update Time: 2025-08-17 10:42:41（北京时间）
+#Update Time: 2025-08-17 10:43:53（北京时间）
 021huaying.com = 0.0.0.0
 5rfh44h5.cc = 0.0.0.0
 aliyun.png-0329.ccjjdwt.com = 0.0.0.0
