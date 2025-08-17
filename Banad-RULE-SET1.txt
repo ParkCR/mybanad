@@ -23,21 +23,21 @@ DOMAIN,vres.kvod7.com
 IP-CIDR,146.103.74.24/32
 
 #电影猎手开屏
-# DOMAIN-SUFFIX,021huaying.com
-# DOMAIN-SUFFIX,u361bpkc.com
+DOMAIN-SUFFIX,021huaying.com
+DOMAIN-SUFFIX,u361bpkc.com
 DOMAIN-SUFFIX,image4.ymj0824.com
-DOMAIN,sdk-static1.ordosejt.com
 DOMAIN-SUFFIX,transfer-landing-page6.ichanton.com
 DOMAIN-SUFFIX,jdtrade8.com
 DOMAIN-SUFFIX,jdnxtrade.com
 DOMAIN-SUFFIX,jdnx8.com
 DOMAIN-SUFFIX,jdnx6.com
 DOMAIN-SUFFIX,jdnxtrade4.com
+DOMAIN-SUFFIX,jdnx.com
+DOMAIN,sdk-static1.ordosejt.com
 DOMAIN,h5api1.pzwh880.com
 DOMAIN,jttpiokjehagbnmnahag1.20rexue.com
 DOMAIN,h5api1.pzwh880.com
 DOMAIN,80674544.com
-DOMAIN-SUFFIX,jdnx.com
 DOMAIN,43ckukd5.ii97efd2.com
 DOMAIN,d11a12hrx50z5c.cloudfront.net
 DOMAIN,beijing2.xstore.qihu.com
