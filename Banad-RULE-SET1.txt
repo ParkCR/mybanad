@@ -3,7 +3,7 @@
 #by: ParkCR
 #Total Count: 8
 #Update Time: 2025-08-12 22:34:47（北京时间）
-DOMAIN,021huaying.com
+
 DOMAIN,5rfh44h5.cc
 DOMAIN,aliyun.png-0329.ccjjdwt.com
 DOMAIN,ggasset.ethersaga.online
@@ -11,6 +11,8 @@ DOMAIN,h9lcd7ks.cc
 DOMAIN,img.jmyqsl.com
 DOMAIN,tp.suppercacheimages.top
 DOMAIN,vnsimg.hfzkgw.com
+DOMAIN-SUFFIX,atyv.cn
+
 #kkys开屏
 DOMAIN,vres.dsty8.com
 DOMAIN,vres.dsty9.com
@@ -20,8 +22,8 @@ DOMAIN,vres.dsty12.com
 DOMAIN,vres.kvod7.com
 IP-CIDR,146.103.74.24/32
 
-DOMAIN-SUFFIX,atyv.cn
-DOMAIN-SUFFIX,021huaying.com
+#电影猎手开屏
+# DOMAIN-SUFFIX,021huaying.com
 # DOMAIN-SUFFIX,u361bpkc.com
 DOMAIN-SUFFIX,image4.ymj0824.com
 DOMAIN,sdk-static1.ordosejt.com
