@@ -18,7 +18,6 @@ DOMAIN,vres.dsty10.com
 DOMAIN,vres.dsty11.com
 DOMAIN,vres.dsty12.com
 DOMAIN,vres.kvod7.com
-DOMAIN-SUFFIX,146.103.74.24
 IP-CIDR,146.103.74.24/32
 
 DOMAIN-SUFFIX,atyv.cn
