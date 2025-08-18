@@ -1,17 +1,23 @@
 #Title: 几十KB的轻量规则
 #Homepage: https://github.com/damengzhu/banad
 #by: ParkCR
-#Total Count: 8
-#Update Time: 2025-08-12 22:34:47（北京时间）
+#Total Count: 15
+#Update Time: 2025-08-18 21:18:00（北京时间）
 
+DOMAIN,17137246.com
+DOMAIN,45217791.com
+DOMAIN,48427934.com
 DOMAIN,5rfh44h5.cc
+DOMAIN,80674544.com
 DOMAIN,aliyun.png-0329.ccjjdwt.com
 DOMAIN,ggasset.ethersaga.online
 DOMAIN,h9lcd7ks.cc
+DOMAIN,ichanton.com
 DOMAIN,img.jmyqsl.com
+DOMAIN,jxnze.cn
+DOMAIN,pddhds.com
 DOMAIN,tp.suppercacheimages.top
 DOMAIN,vnsimg.hfzkgw.com
-DOMAIN-SUFFIX,atyv.cn
 
 #kkys开屏
 DOMAIN,vres.dsty8.com
