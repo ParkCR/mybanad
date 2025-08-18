@@ -116,3 +116,18 @@ twitchav.com,netflav.tv,lijav.com##.ads_head_banner_container
 avtoday.io##div.pt-3.row:nth-of-type(4)
 avtoday.io##div.pt-3.row:nth-of-type(8)
 
+! 2025年8月14日 https://nkvlog.com
+nkvlog.com,nkvod.com,nkvod.me,www.nkvod.com,www.nkvlog.com,lkvod.com,lkvod.org##.flex.ec-ad-img-double.ec-ad-img.box-width
+
+! 2025年8月14日 https://nkvod.org
+nkvod.org,nkvlog.org##.slide-pc
+||iflow-image.myquark.cn/quark-study-iflow/upload/2025/uMsTUH1ii21q2eq/0341996605efc278aebdc2aa11ae132c.gif$image
+
+! 手机APP电影猎手赌博游戏广告
+||48427934.com^
+||45217791.com^
+||17137246.com^
+||jxnze.cn^
+||80674544.com^
+||ichanton.com^
+||pddhds.com^
