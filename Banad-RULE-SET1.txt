@@ -11,13 +11,13 @@ DOMAIN-SUFFIX,jxnze.cn
 DOMAIN-SUFFIX,80674544.com
 DOMAIN-SUFFIX,ichanton.com
 DOMAIN-SUFFIX,pddhds.com
-DOMAIN,5rfh44h5.cc
-DOMAIN,aliyun.png-0329.ccjjdwt.com
-DOMAIN,ggasset.ethersaga.online
-DOMAIN,h9lcd7ks.cc
-DOMAIN,img.jmyqsl.com
-DOMAIN,tp.suppercacheimages.top
-DOMAIN,vnsimg.hfzkgw.com
+DOMAIN-SUFFIX,5rfh44h5.cc
+DOMAIN-SUFFIX,aliyun.png-0329.ccjjdwt.com
+DOMAIN-SUFFIX,ggasset.ethersaga.online
+DOMAIN-SUFFIX,h9lcd7ks.cc
+DOMAIN-SUFFIX,img.jmyqsl.com
+DOMAIN-SUFFIX,tp.suppercacheimages.top
+DOMAIN-SUFFIX,vnsimg.hfzkgw.com
 
 #kkys开屏
 DOMAIN,vres.dsty8.com
@@ -39,13 +39,13 @@ DOMAIN-SUFFIX,jdnx8.com
 DOMAIN-SUFFIX,jdnx6.com
 DOMAIN-SUFFIX,jdnxtrade4.com
 DOMAIN-SUFFIX,jdnx.com
-DOMAIN,sdk-static1.ordosejt.com
-DOMAIN,h5api1.pzwh880.com
-DOMAIN,jttpiokjehagbnmnahag1.20rexue.com
-DOMAIN,h5api1.pzwh880.com
-DOMAIN,80674544.com
-DOMAIN,43ckukd5.ii97efd2.com
-DOMAIN,d11a12hrx50z5c.cloudfront.net
-DOMAIN,beijing2.xstore.qihu.com
+DOMAIN-SUFFIX,sdk-static1.ordosejt.com
+DOMAIN-SUFFIX,h5api1.pzwh880.com
+DOMAIN-SUFFIX,jttpiokjehagbnmnahag1.20rexue.com
+DOMAIN-SUFFIX,h5api1.pzwh880.com
+DOMAIN-SUFFIX,80674544.com
+DOMAIN-SUFFIX,43ckukd5.ii97efd2.com
+DOMAIN-SUFFIX,d11a12hrx50z5c.cloudfront.net
+DOMAIN-SUFFIX,beijing2.xstore.qihu.com
 
 
