@@ -2,19 +2,19 @@
 #Homepage: https://github.com/damengzhu/banad
 #by: ParkCR
 #Total Count: 15
-#Update Time: 2025-08-18 21:31:00（北京时间）
-DOMAIN,021huaying.com
-DOMAIN,17137246.com
-DOMAIN,45217791.com
-DOMAIN,48427934.com
-DOMAIN,5rfh44h5.cc
-DOMAIN,80674544.com
-DOMAIN,aliyun.png-0329.ccjjdwt.com
-DOMAIN,ggasset.ethersaga.online
-DOMAIN,h9lcd7ks.cc
-DOMAIN,ichanton.com
-DOMAIN,img.jmyqsl.com
-DOMAIN,jxnze.cn
-DOMAIN,pddhds.com
-DOMAIN,tp.suppercacheimages.top
-DOMAIN,vnsimg.hfzkgw.com
+#Update Time: 2025-08-19 22:34:06（北京时间）
+DOMAIN-SUFFIX,021huaying.com
+DOMAIN-SUFFIX,17137246.com
+DOMAIN-SUFFIX,45217791.com
+DOMAIN-SUFFIX,48427934.com
+DOMAIN-SUFFIX,5rfh44h5.cc
+DOMAIN-SUFFIX,80674544.com
+DOMAIN-SUFFIX,aliyun.png-0329.ccjjdwt.com
+DOMAIN-SUFFIX,ggasset.ethersaga.online
+DOMAIN-SUFFIX,h9lcd7ks.cc
+DOMAIN-SUFFIX,ichanton.com
+DOMAIN-SUFFIX,img.jmyqsl.com
+DOMAIN-SUFFIX,jxnze.cn
+DOMAIN-SUFFIX,pddhds.com
+DOMAIN-SUFFIX,tp.suppercacheimages.top
+DOMAIN-SUFFIX,vnsimg.hfzkgw.com
