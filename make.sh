@@ -27,6 +27,6 @@ cat dnslist.txt | grep -Ev "\!|\[|\*" | sed -e 's/||//g' -e "s/\^/ = 0.0.0.0/g" 
 # 生成 Banad-RULE-SET.txt 文件
 banadtotal=$(count_rules dnslist.txt)
 echo -e "#Title: 几十KB的轻量规则\n#Homepage: https://github.com/damengzhu/banad\n#by: ParkCR\n#Total Count: $banadtotal\n#Update Time: $time" >Banad-RULE-SET.txt
-cat dnslist.txt | grep -Ev "\!|\[|\*" | sed -e 's/||//g' -e "s/\^//g" | awk '{print "DOMAIN," $0}' | sort -u >>Banad-RULE-SET.txt
+cat dnslist.txt | grep -Ev "\!|\[|\*" | sed -e 's/||//g' -e "s/\^//g" | awk '{print "DOMAIN-SUFFIX," $0}' | sort -u >>Banad-RULE-SET.txt
 
 exit 0
