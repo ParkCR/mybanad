@@ -1,8 +1,8 @@
 #Title: 几十KB的轻量规则
 #Homepage: https://github.com/damengzhu/banad
 #by: ParkCR
-#Total Count: 15
-#Update Time: 2025-08-19 22:34:06（北京时间）
+#Total Count: 16
+#Update Time: 2025-08-25 21:26:40（北京时间）
 021huaying.com = 0.0.0.0
 17137246.com = 0.0.0.0
 45217791.com = 0.0.0.0
@@ -15,6 +15,7 @@ h9lcd7ks.cc = 0.0.0.0
 ichanton.com = 0.0.0.0
 img.jmyqsl.com = 0.0.0.0
 jxnze.cn = 0.0.0.0
+maxgoodplayer.com = 0.0.0.0
 pddhds.com = 0.0.0.0
 tp.suppercacheimages.top = 0.0.0.0
 vnsimg.hfzkgw.com = 0.0.0.0
