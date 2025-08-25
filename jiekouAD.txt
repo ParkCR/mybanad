@@ -85,6 +85,9 @@ weibo.com##.card-video[data-mark*="ad"]
 ! 2025年8月2日 https://ton45.top
 ||tp.suppercacheimages.top^
 
+! 2025年8月19日 https://javp1.cc 神级导航的missav分站
+javp1.cc##.streamer-container2
+
 ! 2025年8月6日 https://nikkanerog.com
 nikkanerog.com###mainBlock > .mainEntryBase
 nikkanerog.com##.mainEntryHead
@@ -131,3 +134,37 @@ nkvod.org,nkvlog.org##.slide-pc
 ||80674544.com^
 ||ichanton.com^
 ||pddhds.com^
+
+
+! 2025年8月20日 https://javmix.tv openload.mov的live分类以及该分类下无效的空白占位
+javmix.tv,openload.mov##div.home-h:nth-of-type(1)
+! javmix.tv,openload.mov##div[style*="max-width: 1000px; width: 92%; height: 400px; margin: 0px auto 50px; background-color: rgb(245, 245, 242)"]
+! javmix.tv,openload.mov,jav.direct##div[style*="max-width: 1000px; width: 92%; height: 400px; margin: 0px auto 50px; background-color: rgb(245, 245, 245)"]
+
+! 模糊匹配关键样式，[style*="rgb(245, 245, "] 会匹配所有 background-color 以 rgb(245, 245, 开头的元素，无论最后一位是 242、245 还是其他数值，都能生效
+javmix.tv,openload.mov,jav.direct##div[style*="max-width: 1000px; width: 92%; height: 400px; margin: 0px auto 50px; background-color: rgb(245, 245, "]
+
+! 2025年8月22日 https://jav.direct
+jav.direct##.home-h
+
+
+! 2025年8月20日 https://yandex.ru
+yandex.ru##.Distribution-Popup_visible.Distribution-Popup_location_bottom.Distribution-Popup_animation_bounce.Distribution-Popup_layout_system_narrow_button.Distribution-Popup_motley_white-old.Distribution-Popup
+
+! 2025年8月21日 https://javdesu.tv
+javdesu.tv##.lg\:px-0.sm\:px-6.px-4.space-y-6.flex-shrink-0.lg\:w-\[25rem\] > .justify-center.flex
+javdesu.tv##.mb-6
+
+! 2025年8月25日 https://www.sakurajav.com
+www.sakurajav.com##.coCoDiv
+
+! 2025年8月25日 https://javideo.net 的宣传片
+||javideo.net/JAV.mp4
+
+! 2025年8月25日 https://avyuri.com 的宣传片
+||maxgoodplayer.com^
+||avyuri.com/*.gif$image
+avyuri.com##center:nth-of-type(1)
+avyuri.com##center:nth-of-type(2)
+avyuri.com##.single-video-comments
+
