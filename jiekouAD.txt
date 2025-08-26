@@ -160,6 +160,7 @@ www.sakurajav.com##.coCoDiv
 
 ! 2025年8月25日 https://javideo.net 的宣传片
 ||javideo.net/JAV.mp4
+javideo.net##[href="https://streamwish.com/"]
 
 ! 2025年8月25日 https://avyuri.com 的宣传片
 ||maxgoodplayer.com^
@@ -167,4 +168,11 @@ www.sakurajav.com##.coCoDiv
 avyuri.com##center:nth-of-type(1)
 avyuri.com##center:nth-of-type(2)
 avyuri.com##.single-video-comments
+
+
+! 2025年8月26日 https://www.av.gl,https://thisav.biz
+www.av.gl,thisav.biz##center
+
+! 2025年8月26日 屏蔽d1hdrnb0x8uvvb.cloudfront.net类型的广告
+||d*.cloudfront.net^
 
