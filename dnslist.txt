@@ -3,7 +3,7 @@
 ! Homepage: https://github.com/damengzhu/banad
 ! by: ParkCR
 ! Total Count: 18
-! Update Time:2025-08-26 13:25:03（北京时间）
+! Update Time:2025-08-28 21:43:23（北京时间）
 ||*.atyv.cn^
 ||021huaying.com^
 ||17137246.com^
