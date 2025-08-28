@@ -32,6 +32,8 @@ etoland.co.kr##.etoad_under_goods
 ||www.mediacategory.com/servlet/adBanner$subdocument
 etoland.co.kr##.banner-box
 etoland.co.kr###login_popup
+! 2025年8月27日 https://etoland.co.kr
+etoland.co.kr##.etoad_under_comment
 
 ! 2025年7月29日 https://spankbang.com
 spankbang.com##.vjs-paused-banner-ad-container
@@ -101,6 +103,9 @@ ch.sooplive.co.kr##.bs-notice_layer
 ! 2025年8月11日 https://2chav.com
 2chav.com##.p3_uekotei
 2chav.com##.plugin3_outline
+! 2025年8月28日 https://2chav.com
+2chav.com##.kijinakakoteeei
+2chav.com##.kijinakakoteeei02
 
 ! 2025年8月12日 https://www.heye.kr
 www.heye.kr###box_type20
@@ -175,4 +180,11 @@ www.av.gl,thisav.biz##center
 
 ! 2025年8月26日 屏蔽d1hdrnb0x8uvvb.cloudfront.net类型的广告
 ||d*.cloudfront.net^
+
+! 2025年8月26日 www2.24-jav.com
+||cdn.24s-jav.com/*.gif$image
+
+
+! 2025年8月28日 https://youskbe.com
+youskbe.com##.main.container > .row > .col-12
 
