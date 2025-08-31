@@ -1,8 +1,8 @@
 #Title: 几十KB的轻量规则
 #Homepage: https://github.com/damengzhu/banad
 #by: ParkCR
-#Total Count: 16
-#Update Time: 2025-08-28 21:43:23（北京时间）
+#Total Count: 19
+#Update Time: 2025-08-31 11:48:21（北京时间）
 DOMAIN-SUFFIX,021huaying.com
 DOMAIN-SUFFIX,17137246.com
 DOMAIN-SUFFIX,45217791.com
@@ -12,10 +12,13 @@ DOMAIN-SUFFIX,80674544.com
 DOMAIN-SUFFIX,aliyun.png-0329.ccjjdwt.com
 DOMAIN-SUFFIX,ggasset.ethersaga.online
 DOMAIN-SUFFIX,h9lcd7ks.cc
+DOMAIN-SUFFIX,hangeul.pstatic.net
 DOMAIN-SUFFIX,ichanton.com
 DOMAIN-SUFFIX,img.jmyqsl.com
 DOMAIN-SUFFIX,jxnze.cn
+DOMAIN-SUFFIX,maxcdn.bootstrapcdn.com
 DOMAIN-SUFFIX,maxgoodplayer.com
 DOMAIN-SUFFIX,pddhds.com
+DOMAIN-SUFFIX,platform.twitter.com
 DOMAIN-SUFFIX,tp.suppercacheimages.top
 DOMAIN-SUFFIX,vnsimg.hfzkgw.com
