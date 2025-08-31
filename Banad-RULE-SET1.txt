@@ -23,7 +23,6 @@ DOMAIN-SUFFIX,platform.twitter.com
 DOMAIN-SUFFIX,tp.suppercacheimages.top
 DOMAIN-SUFFIX,vnsimg.hfzkgw.com
 
-
 #kkys开屏
 DOMAIN,vres.dsty8.com
 DOMAIN,vres.dsty9.com
@@ -52,6 +51,9 @@ DOMAIN-SUFFIX,80674544.com
 DOMAIN-SUFFIX,43ckukd5.ii97efd2.com
 DOMAIN-SUFFIX,d11a12hrx50z5c.cloudfront.net
 DOMAIN-SUFFIX,beijing2.xstore.qihu.com
+
+#自己添加
+DOMAIN-SUFFIX,d1hdrnb0x8uvvb.cloudfront.net
 
 #everia.club的脚本样式
 DOMAIN-SUFFIX, bunny-wp-pullzone-cay6hixg3i.b-cdn.net
