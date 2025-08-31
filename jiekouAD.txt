@@ -4,7 +4,8 @@
 !爱TY影视的暂停广告以及优惠导航
 ||*.atyv.cn^
 
-
+! 精准屏蔽 Twitter 的 widgets.js 脚本 主要是推特分享框
+||platform.twitter.com^
 
 ! 2025年7月10日 kpkuang
 # 匹配 www.kpkuang.xxx 格式的域名
@@ -34,6 +35,16 @@ etoland.co.kr##.banner-box
 etoland.co.kr###login_popup
 ! 2025年8月27日 https://etoland.co.kr
 etoland.co.kr##.etoad_under_comment
+! ||developers.kakao.com/sdk/js/kakao.min.js$script,domain=etoland.co.kr|www.etoland.co.kr
+||developers.kakao.com^$domain=etoland.co.kr|www.etoland.co.kr
+||instagram.com/embed.js$script,domain=etoland.co.kr|www.etoland.co.kr
+||insta-stories-viewer.com/embed.js$script,domain=etoland.co.kr|www.etoland.co.kr
+||etoland.co.kr/data/daumeditor10/$image
+! 精准屏蔽第三方字体（仅在 etoland 生效）
+||*$font,domain=etoland.co.kr|www.etoland.co.kr,third-party
+! 精准屏蔽 Twitter 的 widgets.js 脚本（仅在 etoland 生效）
+! ||platform.twitter.com/$script,domain=etoland.co.kr|www.etoland.co.kr
+! ||platform.twitter.com^$domain=etoland.co.kr|www.etoland.co.kr
 
 ! 2025年7月29日 https://spankbang.com
 spankbang.com##.vjs-paused-banner-ad-container
@@ -187,4 +198,33 @@ www.av.gl,thisav.biz##center
 
 ! 2025年8月28日 https://youskbe.com
 youskbe.com##.main.container > .row > .col-12
+||s3.feedly.com/img/follows/$image,domain=youskbe.com
+! 精准屏蔽 Twitter 的 widgets.js 脚本（仅在 youskbe.com 生效）
+! ||platform.twitter.com^$domain=youskbe.com
+
+! 2025年8月30日 https://oshiridaisuki.com
+oshiridaisuki.com##.widget_text.widget-index-top.widget
+
+! 2025年8月30日 https://bi-girl.net
+bi-girl.net##aside > .top_link
+bi-girl.net##.top_link_half.top_link
+||livedoor.blogimg.jp^$domain=bi-girl.net
+||assets.pinterest.com^$domain=bi-girl.net
+
+! 2025年8月30日 屏蔽everia.club的脚本样式，加快加载速度
+||bunny-wp-pullzone-cay6hixg3i.b-cdn.net^$domain=everia.club
+
+! 2025年8月30日 屏蔽buondua.us的广告占位符 来自uBlock filters – Ads和AdGuard Base filter + EasyList 规则由buondua.com延伸出来
+buondua.us##.main-body > div > div[class]:not([class^="item"]):not([class^="article"]):contains(/^Sponsored ads$/)
+buondua.us##.main-body > div > div[class]:not([class^="item"]):not([class^="article"]):has-text(/^Sponsored ads$/)
+buondua.us##.main-body div[class] > .adsbyexoclick:upward(1)
+buondua.us##.main-body div[class]:has(> .adsbyexoclick)
+buondua.us##.view-list > div:not([class]):has(iframe)
+
+! 2025年8月30日 https://xn--hu5bp8ba.com/
+||maxcdn.bootstrapcdn.com^
+||hangeul.pstatic.net^
+||xn--hu5bp8ba.com/uploads/cache/banner/
+짤짤이.com##.main_banner
+||*$font,domain=xn--hu5bp8ba.com,third-party
 
