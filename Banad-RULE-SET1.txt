@@ -56,4 +56,4 @@ DOMAIN-SUFFIX,beijing2.xstore.qihu.com
 DOMAIN-SUFFIX,d1hdrnb0x8uvvb.cloudfront.net
 
 #everia.club的脚本样式
-DOMAIN-SUFFIX, bunny-wp-pullzone-cay6hixg3i.b-cdn.net
+#DOMAIN-SUFFIX, bunny-wp-pullzone-cay6hixg3i.b-cdn.net
