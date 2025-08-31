@@ -2,7 +2,7 @@
 #Homepage: https://github.com/damengzhu/banad
 #by: ParkCR
 #Total Count: 37
-#Update Time: 2025-08-31 11:52:29（北京时间）
+#Update Time: 2025-08-31 11:56:15（北京时间）
 127.0.0.1 localhost
 ::1 localhost
 0.0.0.0 021huaying.com
