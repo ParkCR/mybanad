@@ -46,7 +46,6 @@ DOMAIN-SUFFIX,jdnx.com
 DOMAIN-SUFFIX,sdk-static1.ordosejt.com
 DOMAIN-SUFFIX,h5api1.pzwh880.com
 DOMAIN-SUFFIX,jttpiokjehagbnmnahag1.20rexue.com
-DOMAIN-SUFFIX,h5api1.pzwh880.com
 DOMAIN-SUFFIX,80674544.com
 DOMAIN-SUFFIX,43ckukd5.ii97efd2.com
 DOMAIN-SUFFIX,d11a12hrx50z5c.cloudfront.net
