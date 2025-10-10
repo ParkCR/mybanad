@@ -2,7 +2,7 @@
 #Homepage: https://github.com/damengzhu/banad
 #by: ParkCR
 #Total Count: 19
-#Update Time: 2025-09-21 11:48:21（北京时间）
+#Update Time: 2025-10-10 11:48:21（北京时间）
 
 DOMAIN-SUFFIX,17137246.com
 DOMAIN-SUFFIX,45217791.com
@@ -32,12 +32,26 @@ DOMAIN-SUFFIX,vres.dsty13.com
 DOMAIN-SUFFIX,vres.dsty14.com
 DOMAIN-SUFFIX,vres.dsty15.com
 DOMAIN-SUFFIX,vres.dsty16.com
+DOMAIN-SUFFIX,vres.dsty17.com
+DOMAIN-SUFFIX,vres.dsty18.com
+DOMAIN-SUFFIX,vres.dsty19.com
+DOMAIN-SUFFIX,vres.dsty20.com
+DOMAIN-SUFFIX,vres.dsty21.com
 DOMAIN-SUFFIX,vsres.dsty13.com
 DOMAIN-SUFFIX,vsres.dsty14.com
 DOMAIN-SUFFIX,vsres.dsty15.com
 DOMAIN-SUFFIX,vsres.dsty16.com
+DOMAIN-SUFFIX,vsres.dsty17.com
+DOMAIN-SUFFIX,vsres.dsty18.com
+DOMAIN-SUFFIX,vsres.dsty19.com
+DOMAIN-SUFFIX,vsres.dsty20.com
+DOMAIN-SUFFIX,vsres.dsty21.com
 DOMAIN,vres.kvod7.com
 IP-CIDR,146.103.74.24/32
+IP-CIDR,103.212.99.243/32
+IP-CIDR,203.135.96.7/32
+
+
 
 #电影猎手开屏
 DOMAIN-SUFFIX,021huaying.com
