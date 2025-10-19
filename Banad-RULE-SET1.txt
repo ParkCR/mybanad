@@ -23,26 +23,26 @@ DOMAIN-SUFFIX,tp.suppercacheimages.top
 DOMAIN-SUFFIX,vnsimg.hfzkgw.com
 
 #kkys开屏
-DOMAIN-SUFFIX,vres.dsty8.com
-DOMAIN-SUFFIX,vres.dsty9.com
-DOMAIN-SUFFIX,vres.dsty10.com
-DOMAIN-SUFFIX,vres.dsty11.com
-DOMAIN-SUFFIX,vres.dsty12.com
-DOMAIN-SUFFIX,vres.dsty13.com
-DOMAIN-SUFFIX,vres.dsty14.com
-DOMAIN-SUFFIX,vres.dsty15.com
-DOMAIN-SUFFIX,vres.dsty16.com
-DOMAIN-SUFFIX,vres.dsty17.com
-DOMAIN-SUFFIX,vres.dsty18.com
+#DOMAIN-SUFFIX,vres.dsty8.com
+#DOMAIN-SUFFIX,vres.dsty9.com
+#DOMAIN-SUFFIX,vres.dsty10.com
+#DOMAIN-SUFFIX,vres.dsty11.com
+#DOMAIN-SUFFIX,vres.dsty12.com
+#DOMAIN-SUFFIX,vres.dsty13.com
+#DOMAIN-SUFFIX,vres.dsty14.com
+#DOMAIN-SUFFIX,vres.dsty15.com
+#DOMAIN-SUFFIX,vres.dsty16.com
+#DOMAIN-SUFFIX,vres.dsty17.com
+#DOMAIN-SUFFIX,vres.dsty18.com
 DOMAIN-SUFFIX,vres.dsty19.com
 DOMAIN-SUFFIX,vres.dsty20.com
 DOMAIN-SUFFIX,vres.dsty21.com
-DOMAIN-SUFFIX,vsres.dsty13.com
-DOMAIN-SUFFIX,vsres.dsty14.com
-DOMAIN-SUFFIX,vsres.dsty15.com
-DOMAIN-SUFFIX,vsres.dsty16.com
-DOMAIN-SUFFIX,vsres.dsty17.com
-DOMAIN-SUFFIX,vsres.dsty18.com
+#DOMAIN-SUFFIX,vsres.dsty13.com
+#DOMAIN-SUFFIX,vsres.dsty14.com
+#DOMAIN-SUFFIX,vsres.dsty15.com
+#DOMAIN-SUFFIX,vsres.dsty16.com
+#DOMAIN-SUFFIX,vsres.dsty17.com
+#DOMAIN-SUFFIX,vsres.dsty18.com
 DOMAIN-SUFFIX,vsres.dsty19.com
 DOMAIN-SUFFIX,vsres.dsty20.com
 DOMAIN-SUFFIX,vsres.dsty21.com
@@ -51,6 +51,19 @@ IP-CIDR,146.103.74.24/32
 IP-CIDR,103.212.99.243/32
 IP-CIDR,203.135.96.7/32
 
+#kkys开屏20251019
+DOMAIN-SUFFIX,vsres.dycahuo.com,REJECT
+DOMAIN-SUFFIX,vsres.fnqty.com,REJECT
+DOMAIN-SUFFIX,vres.fnqty.com,REJECT
+DOMAIN-SUFFIX,vres.dycahuo.com,REJECT
+DOMAIN-SUFFIX,vsres.dsty22.com,REJECT
+DOMAIN-SUFFIX,vsres.dsty23.com,REJECT
+DOMAIN-SUFFIX,vsres.dsty24.com,REJECT
+DOMAIN-SUFFIX,vsres.dsty25.com,REJECT
+DOMAIN-SUFFIX,vres.dsty22.com,REJECT
+DOMAIN-SUFFIX,vres.dsty23.com,REJECT
+DOMAIN-SUFFIX,vres.dsty24.com,REJECT
+DOMAIN-SUFFIX,vres.dsty25.com,REJECT
 
 
 #电影猎手开屏
