@@ -2,7 +2,7 @@
 #Homepage: https://github.com/damengzhu/banad
 #by: ParkCR
 #Total Count: 19
-#Update Time: 2025-11-11 22:25:33（北京时间）
+#Update Time: 2025-11-13 13:34:20（北京时间）
 021huaying.com = 0.0.0.0
 17137246.com = 0.0.0.0
 45217791.com = 0.0.0.0
