@@ -17,30 +17,20 @@ atyys.com,www.atyys.com##img[src^="https://tao.atyv.cn/tyzhaoyouhui"]
 
 ! 2025年7月10日 kpkuang
 # 匹配 www.kpkuang.xxx 格式的域名
-www.kpkuang.*##.uk-alert.fed-show-md-block.fed-hide-sm.fed-hide-xs.fed-back-whits.fed-part-layout
-# 匹配 kpkuang.xxx 和 kpkuang.netlify.app 格式的域名
 kpkuang.*##.uk-alert.fed-show-md-block.fed-hide-sm.fed-hide-xs.fed-back-whits.fed-part-layout
-
-www.kpkuang.*##.uk-alert.fed-hide-md.fed-back-whits.fed-part-layout
 kpkuang.*##.uk-alert.fed-hide-md.fed-back-whits.fed-part-layout
-
-www.kpkuang.*##.bc_dp.fed-hide-md
 kpkuang.*##.bc_dp.fed-hide-md
-
-www.kpkuang.*##.bc2_dp.fed-show-md-block.fed-hide-sm.fed-hide-xs
 kpkuang.*##.bc2_dp.fed-show-md-block.fed-hide-sm.fed-hide-xs
 
 # kpkuang的赌博视频
 ||ggasset.ethersaga.online^
 ||kpkuang.*/template/vfed/asset/img/kydp.webm
-||www.kpkuang.*/template/vfed/asset/img/kydp.webm
-
+# kpkuang的预览截图以及第三方图片 大大提高网站加载速度
 ||voe.sx^$domain=kpkuang.*
-||voe.sx^$domain=www.kpkuang.*
 ||videothumbs.me^$domain=kpkuang.*
-||videothumbs.me^$domain=www.kpkuang.*
 ||asset.easyvidplay.art^$domain=kpkuang.*
-||asset.easyvidplay.art^$domain=www.kpkuang.*
+||*$image,domain=kpkuang.*,third-party
+! ||doubanio.com^$all,domain=kpkuang.*
 
 ! 2025年7月10日 https://www.zxzjys.com 在线之家
 /^https:\/\/(www\.)?zxzjys\.com\/[0-9]+\.gif/$from=zxzjys.com
@@ -147,6 +137,9 @@ ton45.top##.streamer-container2
 ! 2025年8月6日 https://nikkanerog.com
 nikkanerog.com###mainBlock > .mainEntryBase
 nikkanerog.com##.mainEntryHead
+! 2025年11月13日 https://nikkanerog.com 移除无效网页和谷歌搜索插件 大大提高网页加载速度
+||cse.google.com/cse.js$domain=nikkanerog.com,important
+||error.fc2.com$domain=nikkanerog.com
 
 ! 2025年8月9日 https://ch.sooplive.co.kr
 ch.sooplive.co.kr##.bs-notice_layer
@@ -298,6 +291,9 @@ buondua.us##.view-list > div:not([class]):has(iframe)
 ! important：这是一个优先级选项。它赋予了这条规则最高的执行权限，广告拦截器通常遵循“最后匹配的规则生效”的原则，并且有很多白名单规则（例外规则）可能会允许某些脚本加载。important 选项会告诉拦截器：“无论其他规则怎么说（包括任何白名单），都必须执行这条拦截规则，它的优先级最高！”
 ! 所以，这部分的作用是：确保拦截一定会成功，防止被其他规则覆盖。
 ||www.google.com/recaptcha/api.js$domain=www.weblio.jp,important
+! 2025年9月8日 https://thotfans.com 屏蔽谷歌认证加快浏览速度
+||www.google.com/recaptcha/api.js$domain=thotfans.com,important
+
 
 ! 2025年9月9日 https://rou.video
 ||img.ra12.xyz/m/*/rs:fit:*0:1:0/czM6Ly9yb3VwdWIvYWRjcy9jb*L2NtZ*DAwM*uZ2lm.gif
@@ -314,7 +310,7 @@ av-actress-star.com#@#a[href*="/?aff="][target="_blank"]
 ! ||img10.360buyimg.com/ling/jfs/t1/350499/14/21846/235694/004fac02F96437484/0129605add306dc5.webp$all
 ||img10.360buyimg.com^$all,domain=akysw.com|www.v.qq.comiqiyi.com.ggvip.click
 ||img.meituan.net^$all,domain=akysw.com|www.v.qq.comiqiyi.com.ggvip.click
-www.akysw.com##.player-news
+akysw.com##.player-news
 
 
 ! 2025年10月15日 https://www.zhenlang.cc
@@ -328,6 +324,4 @@ popjav.in##div[style*="max-width: 1000px"][style*="width: 92%"][style*="height: 
 ! 2025年11月6日 https://r18.clickme.net
 r18.clickme.net##.idle
 r18.clickme.net##.idle-shadow
-
-
 
