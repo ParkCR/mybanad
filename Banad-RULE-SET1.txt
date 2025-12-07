@@ -23,36 +23,43 @@ DOMAIN-SUFFIX,tp.suppercacheimages.top
 DOMAIN-SUFFIX,vnsimg.hfzkgw.com
 
 
-#kkys开屏 20251019
+#kkys开屏 20251207
 
-DOMAIN-SUFFIX,vsres.dsty19.com
-DOMAIN-SUFFIX,vsres.dsty20.com
-DOMAIN-SUFFIX,vsres.dsty21.com
-DOMAIN-SUFFIX,vsres.dsty22.com
-DOMAIN-SUFFIX,vsres.dsty23.com
-DOMAIN-SUFFIX,vsres.dsty24.com
-DOMAIN-SUFFIX,vsres.dsty25.com
-DOMAIN-SUFFIX,vsres.dsty26.com
-DOMAIN-SUFFIX,vsres.dsty27.com
-DOMAIN-SUFFIX,vsres.dsty28.com
+# DOMAIN-SUFFIX,vsres.dsty19.com
+# DOMAIN-SUFFIX,vsres.dsty20.com
+# DOMAIN-SUFFIX,vsres.dsty21.com
+# DOMAIN-SUFFIX,vsres.dsty22.com
+# DOMAIN-SUFFIX,vsres.dsty23.com
+# DOMAIN-SUFFIX,vsres.dsty24.com
+# DOMAIN-SUFFIX,vsres.dsty25.com
+# DOMAIN-SUFFIX,vsres.dsty26.com
+# DOMAIN-SUFFIX,vsres.dsty27.com
+# DOMAIN-SUFFIX,vsres.dsty28.com
 
-DOMAIN-SUFFIX,vres.dsty19.com
-DOMAIN-SUFFIX,vres.dsty20.com
-DOMAIN-SUFFIX,vres.dsty21.com
-DOMAIN-SUFFIX,vres.dsty22.com
-DOMAIN-SUFFIX,vres.dsty23.com
-DOMAIN-SUFFIX,vres.dsty24.com
-DOMAIN-SUFFIX,vres.dsty25.com
-DOMAIN-SUFFIX,vres.dsty26.com
-DOMAIN-SUFFIX,vres.dsty27.com
-DOMAIN-SUFFIX,vres.dsty28.com
+# DOMAIN-SUFFIX,vres.dsty19.com
+# DOMAIN-SUFFIX,vres.dsty20.com
+# DOMAIN-SUFFIX,vres.dsty21.com
+# DOMAIN-SUFFIX,vres.dsty22.com
+# DOMAIN-SUFFIX,vres.dsty23.com
+# DOMAIN-SUFFIX,vres.dsty24.com
+# DOMAIN-SUFFIX,vres.dsty25.com
+# DOMAIN-SUFFIX,vres.dsty26.com
+# DOMAIN-SUFFIX,vres.dsty27.com
+# DOMAIN-SUFFIX,vres.dsty28.com
 
-DOMAIN-SUFFIX,vsres.fnqty.com
-DOMAIN-SUFFIX,vsres.dycahuo.com
-DOMAIN-SUFFIX,vres.fnqty.com
-DOMAIN-SUFFIX,vres.dycahuo.com
+# DOMAIN-SUFFIX,vsres.fnqty.com
+# DOMAIN-SUFFIX,vsres.dycahuo.com
+# DOMAIN-SUFFIX,vres.fnqty.com
+# DOMAIN-SUFFIX,vres.dycahuo.com
+# DOMAIN-SUFFIX,vres.kvod7.com
+# DOMAIN-SUFFIX,vsres.wilfgu.com
+# DOMAIN-SUFFIX,vsres.yaybzx.com
+# DOMAIN-SUFFIX,vres.yaybzx.com
+# DOMAIN-SUFFIX,vres.wilfgu.com
 
-DOMAIN-SUFFIX,vres.kvod7.com
+DOMAIN-KEYWORD,vsres.,REJECT
+DOMAIN-KEYWORD,vres.,REJECT
+
 IP-CIDR,146.103.74.24/32
 IP-CIDR,103.212.99.243/32
 IP-CIDR,203.135.96.7/32
