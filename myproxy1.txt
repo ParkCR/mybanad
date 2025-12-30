@@ -1,5 +1,13 @@
 #Title: 几十KB的轻量规则
 #Update Time: 2025-12-30 13:53:21（北京时间）
-.etoland.co.kr
-.leakgallery.com
-.topfapgirlspics.com
+
+# 仅代理指定子域名
+# *.zh.wikipedia.org
+# 排除某域名（不代理）
+# @@||gettyimages.com
+
+# 要代理的域名（主域+所有子域）
+||etoland.co.kr
+||leakgallery.com
+||topfapgirlspics.com
+
