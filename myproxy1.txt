@@ -1,5 +1,5 @@
 #Title: 几十KB的轻量规则
-#Update Time: 2025-12-30 16:53:21（北京时间）
+#Update Time: 2026-1-10 21:53:21（北京时间）
 
 # 仅代理指定子域名
 # *.zh.wikipedia.org
@@ -9,15 +9,21 @@
 # 要代理的域名（主域+所有子域）
 
 # BanIP
+||bilibili.tv
 ||etoland.co.kr
+||imginn.com
 ||leakgallery.com
 ||topfapgirlspics.com
-||bilibili.tv
-||imginn.com
 
 # gfwlist
-||startpage.com
-||duckduckgo.com
-||wikipedia.org
-||instagram.com
 ||cdninstagram.com
+||instagram.com
+||duckduckgo.com
+||mgstage.com
+||pixeldrain.com
+||pornhub.com
+||startpage.com
+||threads.com
+||twitter.com
+||x.com
+
