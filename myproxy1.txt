@@ -25,5 +25,8 @@
 ||startpage.com
 ||threads.com
 ||twitter.com
+||tiktok.com
+||wikipedia.org
 ||x.com
+
 
