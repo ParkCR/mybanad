@@ -10,3 +10,4 @@ DOMAIN-SUFFIX,imginn.com
 DOMAIN-SUFFIX,kpopping.com
 DOMAIN-SUFFIX,leakgallery.com
 DOMAIN-SUFFIX,topfapgirlspics.com
+DOMAIN-SUFFIX,wallhaven.cc
