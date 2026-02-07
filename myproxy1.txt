@@ -16,6 +16,12 @@
 ||leakgallery.com
 ||topfapgirlspics.com
 ||wallhaven.cc
+||freefq.com
+||perplexity.ai
+||arena.ai
+||lmsys.org
+||lmarena.ai
+||nitter.*
 
 # gfwlist
 ||cdninstagram.com
@@ -31,6 +37,7 @@
 ||tiktok.com
 ||wikipedia.org
 ||x.com
+
 
 
 
