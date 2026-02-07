@@ -1,8 +1,8 @@
 #Title: BanIP
 #Homepage: https://github.com/damengzhu/banad
 #by: ParkCR
-#Total Count: 6
-#Update Time: 2026-1-25 20:18:21（北京时间）
+#Total Count: 13
+#Update Time: 2026-2-07 12:18:21（北京时间）
 
 DOMAIN-SUFFIX,bilibili.tv
 DOMAIN-SUFFIX,etoland.co.kr
@@ -11,3 +11,9 @@ DOMAIN-SUFFIX,kpopping.com
 DOMAIN-SUFFIX,leakgallery.com
 DOMAIN-SUFFIX,topfapgirlspics.com
 DOMAIN-SUFFIX,wallhaven.cc
+DOMAIN-SUFFIX,freefq.com
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,arena.ai
+DOMAIN-SUFFIX,lmsys.org
+DOMAIN-SUFFIX,lmarena.ai
+DOMAIN-KEYWORD,nitter
