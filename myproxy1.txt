@@ -1,5 +1,5 @@
 #Title: 几十KB的轻量规则
-#Update Time: 2026-1-10 21:53:21（北京时间）
+#Update Time: 2026-2-07 12:35:21（北京时间）
 
 # 仅代理指定子域名
 # *.zh.wikipedia.org
@@ -22,6 +22,7 @@
 ||lmsys.org
 ||lmarena.ai
 ||nitter.*
+||xcancel.com
 
 # gfwlist
 ||cdninstagram.com
@@ -37,6 +38,7 @@
 ||tiktok.com
 ||wikipedia.org
 ||x.com
+
 
 
 
