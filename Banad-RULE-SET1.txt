@@ -2,7 +2,7 @@
 #Homepage: https://github.com/damengzhu/banad
 #by: ParkCR
 #Total Count: 19
-#Update Time: 2025-10-19 18:48:21（北京时间）
+#Update Time: 2026-02-15 20:48:21（北京时间）
 
 DOMAIN-SUFFIX,17137246.com
 DOMAIN-SUFFIX,45217791.com
@@ -83,6 +83,9 @@ DOMAIN-SUFFIX,80674544.com
 DOMAIN-SUFFIX,43ckukd5.ii97efd2.com
 DOMAIN-SUFFIX,d11a12hrx50z5c.cloudfront.net
 DOMAIN-SUFFIX,beijing2.xstore.qihu.com
+
+#poptube app广告
+DOMAIN-SUFFIX,advincent.com
 
 #自己添加
 DOMAIN-SUFFIX,d1hdrnb0x8uvvb.cloudfront.net
