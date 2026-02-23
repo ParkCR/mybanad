@@ -2,7 +2,7 @@
 #Homepage: https://github.com/damengzhu/banad
 #by: ParkCR
 #Total Count: 13
-#Update Time: 2026-2-07 12:18:21（北京时间）
+#Update Time: 2026-2-23 21:37:21（北京时间）
 
 DOMAIN-SUFFIX,bilibili.tv
 DOMAIN-SUFFIX,etoland.co.kr
@@ -17,3 +17,8 @@ DOMAIN-SUFFIX,arena.ai
 DOMAIN-SUFFIX,lmsys.org
 DOMAIN-SUFFIX,lmarena.ai
 DOMAIN-KEYWORD,nitter
+
+#DNS
+DOMAIN-SUFFIX,felo.ai
+DOMAIN-SUFFIX,isou.chat
+
