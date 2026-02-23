@@ -2,7 +2,7 @@
 #Homepage: https://github.com/damengzhu/banad
 #by: ParkCR
 #Total Count: 19
-#Update Time: 2026-02-15 20:35:51（北京时间）
+#Update Time: 2026-02-23 21:39:07（北京时间）
 DOMAIN-SUFFIX,021huaying.com
 DOMAIN-SUFFIX,17137246.com
 DOMAIN-SUFFIX,45217791.com
