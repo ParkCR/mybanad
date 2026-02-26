@@ -5,7 +5,7 @@
 #Update Time: 2026-2-23 21:37:21（北京时间）
 
 DOMAIN-SUFFIX,bilibili.tv
-DOMAIN-SUFFIX,etoland.co.kr
+# DOMAIN-SUFFIX,etoland.co.kr
 DOMAIN-SUFFIX,imginn.com
 DOMAIN-SUFFIX,kpopping.com
 DOMAIN-SUFFIX,leakgallery.com
@@ -21,4 +21,5 @@ DOMAIN-KEYWORD,nitter
 #DNS
 DOMAIN-SUFFIX,felo.ai
 DOMAIN-SUFFIX,isou.chat
+
 
