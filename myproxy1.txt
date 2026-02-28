@@ -1,5 +1,5 @@
 #Title: 几十KB的轻量规则
-#Update Time: 2026-2-07 12:35:21（北京时间）
+#Update Time: 2026-2-28 12:35:21（北京时间）
 
 # 仅代理指定子域名
 # *.zh.wikipedia.org
@@ -10,7 +10,7 @@
 
 # BanIP
 ||bilibili.tv
-||etoland.co.kr
+# ||etoland.co.kr
 ||imginn.com
 ||kpopping.com
 ||leakgallery.com
@@ -38,6 +38,7 @@
 ||tiktok.com
 ||wikipedia.org
 ||x.com
+
 
 
 
