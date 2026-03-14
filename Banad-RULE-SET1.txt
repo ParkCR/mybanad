@@ -57,7 +57,7 @@ DOMAIN-SUFFIX,vnsimg.hfzkgw.com
 # DOMAIN-SUFFIX,vres.yaybzx.com
 # DOMAIN-SUFFIX,vres.wilfgu.com
 
-DOMAIN-KEYWORD,vsres.,REJECT
+DOMAIN-KEYWORD,vsres,REJECT
 DOMAIN-KEYWORD,vres.,REJECT
 
 IP-CIDR,146.103.74.24/32
