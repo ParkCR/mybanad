@@ -1,5 +1,5 @@
 #Title: 几十KB的轻量规则
-#Update Time: 2026-2-28 12:35:21（北京时间）
+#Update Time: 2026-4-21 12:35:21（北京时间）
 
 # 仅代理指定子域名
 # *.zh.wikipedia.org
@@ -23,6 +23,7 @@
 ||lmarena.ai
 ||nitter.*
 ||xcancel.com
+||urlebird.com
 
 # gfwlist
 ||cdninstagram.com
@@ -39,7 +40,29 @@
 ||wikipedia.org
 ||x.com
 
-
+!!---Tiktok---
+||tiktok.com
+||tiktokv.com
+||tiktokv.us
+||tiktokcdn-us.com
+||tiktokcdn.com
+||tiktokcdn-eu.com
+!!---Twitch---
+||jtvnw.net
+||ttvnw.net
+||twitch.tv
+||twitchcdn.net
+!!---Twitter/X---
+||periscope.tv
+||pscp.tv
+||t.co
+||tweetdeck.com
+||twimg.com
+||twitpic.com
+||twitter.com
+||twitter.jp
+||vine.co
+||x.com
 
 
 
