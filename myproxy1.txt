@@ -24,6 +24,10 @@
 ||nitter.*
 ||xcancel.com
 ||urlebird.com
+||karmasearch.org
+||qwant.com
+
+
 
 # gfwlist
 ||cdninstagram.com
@@ -37,6 +41,7 @@
 ||threads.com
 ||twitter.com
 ||tiktok.com
+||telegra.ph
 ||wikipedia.org
 ||x.com
 
