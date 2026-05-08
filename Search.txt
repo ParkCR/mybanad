@@ -57,6 +57,9 @@ DOMAIN-SUFFIX,spreadprivacy.com
 !!---startpage---
 DOMAIN-SUFFIX,startpage.com
 
+!!---brave---
+DOMAIN-SUFFIX,search.brave.com
+
 !!---qwant---
 DOMAIN-SUFFIX,qwant.com
 
