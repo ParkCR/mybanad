@@ -58,7 +58,8 @@ DOMAIN-SUFFIX,spreadprivacy.com
 DOMAIN-SUFFIX,startpage.com
 
 !!---brave---
-DOMAIN-SUFFIX,search.brave.com
+# 通过hosts映射解决无需代理
+# DOMAIN-SUFFIX,search.brave.com
 
 !!---qwant---
 DOMAIN-SUFFIX,qwant.com
