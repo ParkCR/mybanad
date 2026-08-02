@@ -66,6 +66,7 @@ DOMAIN-SUFFIX,qwant.com
 
 !!---yahoo---
 DOMAIN-SUFFIX,yahoo.com
+DOMAIN-SUFFIX,yimg.com
 
 !!---karmasearch---
 DOMAIN-SUFFIX,karmasearch.org
