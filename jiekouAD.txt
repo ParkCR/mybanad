@@ -297,6 +297,13 @@ av19.live##.sidebar-ads
 ! 顶部gif广告下方的合作导航链接
 ###site-partners
 
+! 2026年11月1日 https://budayang-20261058.rbjpsp.com! PC端顶部gif广告
+##.tile-slot.surface-slot
+
+! 2026年11月3日 https://pornhub-2026102.dgav39.com! 手机端顶部gif广告
+##.surface-slot.tile-slot
+
+
 ! 2025年8月2日 神级导航的广告导航栏图片域名
 ||aliyun.png-0329.ccjjdwt.com^
 ||5rfh44h5.cc^
@@ -657,7 +664,4 @@ news.qq.com##.qqcom-jxvideo
 news.qq.com##.PSzsvQrYB231yukTo2eK
 news.qq.com##.qAQJm2VqRz__nGlGj2cg
 news.qq.com##.channel-right-sticky
-
-! 2026年11月1日 https://budayang-20261058.rbjpsp.com
-budayang-20261058.rbjpsp.com##.tile-slot.surface-slot
 
