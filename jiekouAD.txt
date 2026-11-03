@@ -1,100 +1,54 @@
-! 2023-01-30 https://97mm.cc
-||97mm.cc/A12.gif$image
-||97mm.cc/A11.gif$image
-!爱TY影视的暂停广告以及优惠导航
-||*.atyv.cn^
-! 主规则：精准定位广告容器
-atyys.com,www.atyys.com##div[style*="z-index: 9999"][style*="top: 50%"][style*="transform: translate(-50%, -50%)"]
-! 备用1：文字+样式组合
-atyys.com,www.atyys.com##div:has-text(广告)[style*="position: absolute"][style*="z-index: 9999"]
-! 备用2：广告链接（前缀匹配防参数）
-atyys.com,www.atyys.com##a[href^="http://z.atyv.cn"]
-! 备用3：广告图片（前缀匹配防CDN变化）
-atyys.com,www.atyys.com##img[src^="https://tao.atyv.cn/tyzhaoyouhui"]
+# ============================================================
+# * 通配符使用规则总结
+# ============================================================
+
+# 1. * 不能单独作为域名本身
+#    ❌ ||*.gif
+#    ❌ ||*.cc/*.gif
+#    ✅ ||nmsp*.cc/*.gif  (前面有固定字符 "nmsp" 作为锚点)
+
+# 2. 当 * 出现在域名中间时，后面必须紧跟 / 或具体路径
+#    ❌ ||nmsp*.cc          (无路径，不生效)
+#    ❌ ||nmsp*.cc^         (不可靠)
+#    ✅ ||nmsp*.cc/         (有斜杠)
+#    ✅ ||nmsp*.cc/*.gif    (正确用法)
+
+# 核心原则：
+#    - * 可以放在域名中间（前面要有固定字符）
+#    - 也可以放在路径中（前面要有 /）
+#    - 禁止放在域名开头，也禁止放在域名结尾（除非后面还有 / 或具体路径）
+
+
+
+
+!----------------------全局屏蔽 主要是社交媒体-----------------------
 
 ! 精准屏蔽 Twitter 的 widgets.js 脚本 主要是推特分享框
 ||platform.twitter.com^
 
-! 2025年7月10日 kpkuang
-# 匹配 www.kpkuang.xxx 格式的域名
-kpkuang.*##.uk-alert.fed-show-md-block.fed-hide-sm.fed-hide-xs.fed-back-whits.fed-part-layout
-kpkuang.*##.uk-alert.fed-hide-md.fed-back-whits.fed-part-layout
-kpkuang.*##.bc_dp.fed-hide-md
-kpkuang.*##.bc2_dp.fed-show-md-block.fed-hide-sm.fed-hide-xs
+! 2026年4月30日 精准屏蔽 youtube 的在线聊天框 主要是国外篮球比赛在线观看页面
+||www.youtube.com/live_chat$subdocument
 
-# kpkuang的赌博视频
-||ggasset.ethersaga.online^
-||kpkuang.*/template/vfed/asset/img/kydp.webm
-# kpkuang的预览截图以及第三方图片 大大提高网站加载速度
-||voe.sx^$domain=kpkuang.*
-||videothumbs.me^$domain=kpkuang.*
-||asset.easyvidplay.art^$domain=kpkuang.*
-||*$image,domain=kpkuang.*,third-party
-! ||doubanio.com^$all,domain=kpkuang.*
+! 2026年5月8日 xinggsf的通用、广告联盟站点图片脚本等
+*/ad.$image,script,subdocument,media
 
-! 2025年7月10日 https://www.zxzjys.com 在线之家
-/^https:\/\/(www\.)?zxzjys\.com\/[0-9]+\.gif/$from=zxzjys.com
-
-! 2025年7月13日 手机影视APP开屏广告
-||021huaying.com^
+! 2026年9月25日 放行上述xinggsf的通用拦截误杀的豆包网页聊天框
+@@||lf-flow-web-cdn.doubao.com^*/ad.$script
 
 
-! 2025年11月11日 https://www.heye.kr 的imgur域名广告图片
-||i.imgur.com^$all,domain=www.heye.kr|heye.kr
-www.heye.kr###banner_949 > .banner_image_0
-www.heye.kr###top_right > .first.banner-wrap
-! 2025年8月12日 https://www.heye.kr
-www.heye.kr###box_type20
-! 2025年10月6日 https://www.heye.kr
-www.heye.kr##.toast-banner
-! 2025年11月11日 https://www.heye.kr
-www.heye.kr###site_right_banner_item
-! 精准屏蔽第三方字体（仅在 heye生效）
-||*$script,domain=www.heye.kr|heye.kr,third-party
+!----------------------谷歌认证-----------------------
 
-! 2025年7月24日 https://etoland.co.kr
-etoland.co.kr##.etoad_under_goods
-||www.mediacategory.com/servlet/adBanner$subdocument
-etoland.co.kr##.banner-box
-etoland.co.kr###login_popup
-! 2025年8月27日 https://etoland.co.kr
-etoland.co.kr##.etoad_under_comment
-! ||developers.kakao.com/sdk/js/kakao.min.js$script,domain=etoland.co.kr|www.etoland.co.kr
-||developers.kakao.com^$domain=etoland.co.kr|www.etoland.co.kr
-||instagram.com/embed.js$script,domain=etoland.co.kr|www.etoland.co.kr
-||insta-stories-viewer.com/embed.js$script,domain=etoland.co.kr|www.etoland.co.kr
-||etoland.co.kr/data/daumeditor10/$image
-! 精准屏蔽第三方字体（仅在 etoland 生效）
-||*$font,domain=etoland.co.kr|www.etoland.co.kr,third-party
-! 精准屏蔽 Twitter 的 widgets.js 脚本（仅在 etoland 生效）
-! ||platform.twitter.com/$script,domain=etoland.co.kr|www.etoland.co.kr
-! ||platform.twitter.com^$domain=etoland.co.kr|www.etoland.co.kr
-! 2025年10月9日 https://etoland.co.kr
-etoland.co.kr###good_component
+! 2025年9月8日 https://www.weblio.jp 屏蔽谷歌认证加快浏览速度
+! ||www.google.com/recaptcha/api.js$domain=www.weblio.jp
+! important：这是一个优先级选项。它赋予了这条规则最高的执行权限，广告拦截器通常遵循“最后匹配的规则生效”的原则，并且有很多白名单规则（例外规则）可能会允许某些脚本加载。important 选项会告诉拦截器：“无论其他规则怎么说（包括任何白名单），都必须执行这条拦截规则，它的优先级最高！”
+! 所以，这部分的作用是：确保拦截一定会成功，防止被其他规则覆盖。
+||www.google.com/recaptcha/api.js$domain=www.weblio.jp,important
+! 2025年9月8日 https://thotfans.com 屏蔽谷歌认证加快浏览速度
+||www.google.com/recaptcha/api.js$domain=thotfans.com,important
+! 2025年9月8日 https://www.jkforum.net 屏蔽谷歌认证加快浏览速度
+||www.google.com/recaptcha/api.js$domain=jkforum.net,important
 
-! 精准屏蔽第三方字体（仅在 24post.co.kr 生效）
-||*$font,domain=24post.co.kr,third-party
-||24post.co.kr/1133.gif$all
-
-! 2025年7月29日 https://spankbang.com
-spankbang.com##.vjs-paused-banner-ad-container
-
-! 2025年7月30日 https://dpple.net
-dpple.net##.panel-heading
-dpple.net##center:nth-of-type(2)
-
-
-! 2025年8月1日 https://yandex.ru
-! yandex.ru##.bAlMSMJhT7LIK-Card_bLXE1LZNbz7cO.bAlMSMJhT7LIK-Card
-
-! 2025年8月4日 https://av19.live
-av19.live##.mobile-banner.col-md-12
-av19.live###next-to-video-2
-av19.live##.sidebar-ads
-||av19.live/data/banner/
-||david.cdnbuzz.buzz/banner/
-
-! 2025年8月微博广告屏蔽规则（全面版）
+!----------------------2025年8月微博广告屏蔽规则（全面版）-----------------------
 
 ! 基础规则 - 屏蔽所有带广告标记的微博
 weibo.com##article:has(.wbpro-tag)
@@ -114,14 +68,234 @@ weibo.com##.wbpro-tag-c2
 weibo.com##a[href*="weiboad"]
 weibo.com##.card-video[data-mark*="ad"]
 
+
+!----------------------yandex-----------------------
+
+! 2025年8月20日 https://yandex.ru
+yandex.ru##.Distribution-Popup_visible.Distribution-Popup_location_bottom.Distribution-Popup_animation_bounce.Distribution-Popup_layout_system_narrow_button.Distribution-Popup_motley_white-old.Distribution-Popup
+! 2026年3月28日 https://yandex.kz
+yandex.kz##.content-feed-ssr.feed-ssr
+yandex.kz##.body__view > div
+yandex.kz##.body__right-column
+
+! 2026年3月28日 https://yandex.by
+yandex.by##.alerts
+
+!----------------------perplexity.ai-----------------------
+
+! 2026年3月31日 https://www.perplexity.ai
+
+! 隐藏登录弹窗遮罩和对话框
+perplexity.ai##.fixed.inset-0.bg-backdrop\/70
+perplexity.ai##div[role="dialog"]:has-text(在下方注册)
+
+! 强制移除 body 和 html 上的 overflow: hidden 样式，恢复滚动
+perplexity.ai##html:style(overflow: auto !important)
+perplexity.ai##body:style(overflow: auto !important)
+
+! 可选：使用脚本直接移除可能导致滚动锁定的类或属性
+perplexity.ai##+js(rmnt, .fixed.inset-0.bg-backdrop\/70)
+perplexity.ai##+js(rmnt, [style*="overflow: hidden"])
+
+! 2026年4月25日 https://www.perplexity.ai
+www.perplexity.ai##.justify-center.items-center.flex.overflow-y-auto.inset-0.fixed
+www.perplexity.ai##.backdrop-blur-sm.duration-200.ease-outExpo.fade-in.animate-in.bg-backdrop.inset-0.fixed.fill-mode-both.md\:items-center.items-stretch
+
+
+
+
+!----------------------爱TY影视的暂停广告以及优惠导航-----------------------
+
+
+! ||*.atyv.cn^
+! 主规则：精准定位广告容器
+atyys.com,www.atyys.com##div[style*="z-index: 9999"][style*="top: 50%"][style*="transform: translate(-50%, -50%)"]
+! 备用1：文字+样式组合
+atyys.com,www.atyys.com##div:has-text(广告)[style*="position: absolute"][style*="z-index: 9999"]
+! 备用2：广告链接（前缀匹配防参数）
+atyys.com,www.atyys.com##a[href^="http://z.atyv.cn"]
+! 备用3：广告图片（前缀匹配防CDN变化）
+atyys.com,www.atyys.com##img[src^="https://tao.atyv.cn/tyzhaoyouhui"]
+
+!----------------------看片狂人-----------------------
+
+! 2025年7月10日 kpkuang
+# 匹配 www.kpkuang.xxx 格式的域名
+! kpkuang.*##.uk-alert.fed-show-md-block.fed-hide-sm.fed-hide-xs.fed-back-whits.fed-part-layout
+! kpkuang.*##.uk-alert.fed-hide-md.fed-back-whits.fed-part-layout
+! kpkuang.*##.bc_dp.fed-hide-md
+! kpkuang.*##.bc2_dp.fed-show-md-block.fed-hide-sm.fed-hide-xs
+
+! 2026年5月8日 kpkuang 更新正则适配新网站
+/.*kuang.*\..*/##.uk-alert.fed-show-md-block.fed-hide-sm.fed-hide-xs.fed-back-whits.fed-part-layout
+/.*kuang.*\..*/##.uk-alert.fed-hide-md.fed-back-whits.fed-part-layout
+/.*kuang.*\..*/##.bc_dp.fed-hide-md
+/.*kuang.*\..*/##.bc2_dp.fed-show-md-block.fed-hide-sm.fed-hide-xs
+
+
+# kpkuang的赌博视频
+||ggasset.ethersaga.online^
+||kpkuang.*/template/vfed/asset/img/kydp.webm
+# kpkuang的预览截图以及第三方图片 大大提高网站加载速度
+||voe.sx^$domain=/.*kuang.*\..*/
+||videothumbs.me^$domain=/.*kuang.*\..*/
+||asset.easyvidplay.art^$domain=/.*kuang.*\..*/
+||*$image,domain=/.*kuang.*\..*/,third-party
+
+! ||doubanio.com^$all,domain=kpkuang.*
+
+
+
+!----------------------heye.kr-----------------------
+
+! 2025年11月11日 https://www.heye.kr 的imgur域名广告图片
+||i.imgur.com^$all,domain=www.heye.kr|heye.kr
+www.heye.kr###banner_949 > .banner_image_0
+www.heye.kr###top_right > .first.banner-wrap
+! 2025年8月12日 https://www.heye.kr
+www.heye.kr###box_type20
+! 2025年10月6日 https://www.heye.kr
+www.heye.kr##.toast-banner
+! 2025年11月11日 https://www.heye.kr
+www.heye.kr###site_right_banner_item
+! 精准屏蔽第三方字体（仅在 heye生效）
+||*$script,domain=www.heye.kr|heye.kr,third-party
+! 2026年1月6日 屏蔽heye.kr底部购物banner
+www.heye.kr###board_detail_vote
+www.heye.kr###board_detail
+! 2026年2月3日 https://www.heye.kr
+www.heye.kr###board_detail_top
+
+
+!----------------------etoland.co.kr-----------------------
+
+
+! 2025年7月24日 https://etoland.co.kr
+etoland.co.kr##.etoad_under_goods
+||www.mediacategory.com/servlet/adBanner$subdocument
+etoland.co.kr##.banner-box
+etoland.co.kr###login_popup
+
+! 2025年8月27日 https://etoland.co.kr
+etoland.co.kr##.etoad_under_comment
+||developers.kakao.com^$domain=etoland.co.kr|www.etoland.co.kr
+||instagram.com/embed.js$script,domain=etoland.co.kr|www.etoland.co.kr
+||insta-stories-viewer.com/embed.js$script,domain=etoland.co.kr|www.etoland.co.kr
+||etoland.co.kr/data/daumeditor10/$image
+
+! 精准屏蔽第三方字体和js脚本（仅在 etoland 生效）
+
+||*$font,script,domain=etoland.co.kr|www.etoland.co.kr,third-party
+! 精准屏蔽 Twitter 的 widgets.js 脚本（仅在 etoland 生效）
+! ||platform.twitter.com/$script,domain=etoland.co.kr|www.etoland.co.kr
+! ||platform.twitter.com^$domain=etoland.co.kr|www.etoland.co.kr
+
+! 2025年10月9日 https://etoland.co.kr
+etoland.co.kr###good_component
+! 2025年12月22日 https://etoland.co.kr
+etoland.co.kr##.naver-store-search-pc
+etoland.co.kr##.hotdeal_pc_aside_latest
+! 2026年2月8日 https://www.etoland.co.kr
+etoland.co.kr###main_popup
+! 2026年5月8日 https://etoland.co.kr
+etoland.co.kr##div.dark\:bg-etoBg-2.py-2.px-2.border-etoDivider-1.border.rounded-md
+! 2026年5月11日 https://etoland.co.kr 页面弹窗以及遮罩
+etoland.co.kr##.py-6.px-4.bg-black\/75.overflow-y-auto.justify-center.items-center.flex.z-1000.inset-0.fixed
+! 2026年5月26日 https://etoland.co.kr 文章内容上方的几条推广帖
+etoland.co.kr##.dark\:bg-amber-50\/20.bg-amber-100\/60.gap-1.items-center.h-17.flex
+etoland.co.kr##li.gap-1.items-center.h-10.flex:nth-of-type(2)
+etoland.co.kr##li.gap-1.items-center.h-10.flex:nth-of-type(3)
+etoland.co.kr##li.gap-1.items-center.h-10.flex:nth-of-type(4)
+etoland.co.kr##li.gap-1.items-center.h-10.flex:nth-of-type(5)
+! 2026年5月30日 https://etoland.co.kr 右侧推荐栏
+etoland.co.kr##.justify-start.h-full.flex.right-side-banner.top-0.absolute
+! 2026年6月5日 https://etoland.co.kr 搜索页结果上方的广告版块
+etoland.co.kr##.dark\:bg-etoBg-3.py-3.px-4.bg-\[\#feffd792\].border-b-etoDivider-1.border-b.gap-4.flex-col.flex
+! 2026年6月11日 https://etoland.co.kr 最左侧贴片广告栏 如世界杯广告
+etoland.co.kr##.justify-end.h-full.flex.left-side-banner.top-0.absolute
+! 2026年6月26日 https://etoland.co.kr 帖子上方的电商推广广告
+etoland.co.kr##.dark\:bg-amber-50\/20.bg-amber-100\/60.dark\:hover\:bg-etoBg-2.hover\:bg-\[\#feffd792\].py-2.px-4.gap-3.flex
+! 2026年8月4日 https://etoland.co.kr 搜索结果页上方的购物广告
+etoland.co.kr##.dark\:bg-amber-50\/20.hover\:bg-etoBg-3\/50.bg-amber-100\/60.border-b-etoDivider-1.border-b.overflow-hidden.min-h-14.h-fit.flex
+! 2026年8月4日 https://etoland.co.kr 搜索结果页结果之间穿插的购物广告
+etoland.co.kr##li.hover\:bg-etoBg-3\/50.border-b-etoDivider-1.border-b.overflow-hidden.min-h-14.h-fit.flex:nth-of-type(7)
+etoland.co.kr##li.hover\:bg-etoBg-3\/50.border-b-etoDivider-1.border-b.overflow-hidden.min-h-14.h-fit.flex:nth-of-type(20)
+etoland.co.kr##li.hover\:bg-etoBg-3\/50.border-b-etoDivider-1.border-b.overflow-hidden.min-h-14.h-fit.flex:nth-of-type(33)
+! 2026年8月28日 https://etoland.co.kr 左侧栏toss广告轮播
+etoland.co.kr##section:nth-of-type(5)
+
+
+
+!----------------------其他韩国论坛-----------------------
+
+! 精准屏蔽第三方字体（仅在 24post.co.kr 生效）
+||*$font,domain=24post.co.kr,third-party
+||24post.co.kr/1133.gif$all
+! 2025年8月9日 https://24post.co.kr
+24post.co.kr##.footer_text
+
+! 2026年4月20日 https://red52.kr
+red52.kr##.banner-bottom.banner-pc
+||img.red52.kr/ads/
+
+! 2026年3月3日 https://jjtv.kr
+jjtv.kr##div.adsense:nth-of-type(3)
+
+! 2025年8月9日 https://ch.sooplive.co.kr
+ch.sooplive.co.kr##.bs-notice_layer
+
+
+! 2025年7月30日 https://dpple.net
+dpple.net##.panel-heading
+dpple.net##center:nth-of-type(2)
+
+
+! 2025年8月4日 https://av19.live
+av19.live##.mobile-banner.col-md-12
+av19.live###next-to-video-2
+av19.live##.sidebar-ads
+||av19.live/data/banner/
+||david.cdnbuzz.buzz/banner/
+
+! 2025年8月30日 https://xn--hu5bp8ba.com/
+||maxcdn.bootstrapcdn.com^
+||hangeul.pstatic.net^
+||xn--hu5bp8ba.com/uploads/cache/banner/
+짤짤이.com##.main_banner
+||*$font,domain=xn--hu5bp8ba.com,third-party
+
+! 2025年8月30日 https://bamnol.com/ 第三方字体样式屏蔽
+||*$font,domain=bamnol.com,third-party
+
+! 2025年8月30日 https://www.issuya.com/ 第三方字体样式，第三方脚本屏蔽
+||*$font,domain=www.issuya.com,third-party
+||*$script,domain=www.issuya.com,third-party
+||developers.kakao.com^$domain=www.issuya.com
+||cdn.rawgit.com^$domain=www.issuya.com
+
+
+
+!----------------------神级导航-----------------------
+
 ! 2025年8月2日 神级导航的广告导航栏
 ! /\w+-\d+\.xxavx\d+\.com/##.streamer-container2
 ! 基于上述规则进行拓展的规则在括号里面增加网址即可
-/\w+-\d+\.(?:xxavx|prp|xxnet)\d+\.com/##.streamer-container2
+! /\w+-\d+\.(?:xxavx|prp|xxnet)\d+\.com/##.streamer-container2
 
 ! 2025年8月19日 https://javp1.cc 神级导航的missav分站
-javp1.cc##.streamer-container2
-ton45.top##.streamer-container2
+! javp1.cc##.streamer-container2
+! ton45.top##.streamer-container2
+
+! 2026年3月24日 --- 针对神级导航的通用类名拦截 ---
+! ##.streamer-container2
+! 2026年10月27日 --- 【更新】针对神级导航的通用类名拦截 ---
+###ribbon-upper
+
+! 2026年9月7日 https://eporner-2026083.dgav35.com --- 针对神级导航的通用类名拦截 ---
+! 顶部gif广告
+###site-banner-top 
+! 顶部gif广告下方的合作导航链接
+###site-partners
 
 ! 2025年8月2日 神级导航的广告导航栏图片域名
 ||aliyun.png-0329.ccjjdwt.com^
@@ -134,18 +308,22 @@ ton45.top##.streamer-container2
 ||tp.suppercacheimages.top^
 
 
+!----------------------nikkanerog.com-----------------------
+
 ! 2025年8月6日 https://nikkanerog.com
 nikkanerog.com###mainBlock > .mainEntryBase
 nikkanerog.com##.mainEntryHead
+! nikkanerog.com##div[align="center"]:has(a[href*="al.fanza.co.jp"])
+! 这个没有当前页面作品封面
+! nikkanerog.com##div.mainEntryMore a[rel="sponsored"]
+! 这个有当前页面作品封面
+nikkanerog.com##div.mainEntryMore :has(a[rel="sponsored"])
 ! 2025年11月13日 https://nikkanerog.com 移除无效网页和谷歌搜索插件 大大提高网页加载速度
 ||cse.google.com/cse.js$domain=nikkanerog.com,important
 ||error.fc2.com$domain=nikkanerog.com
 
-! 2025年8月9日 https://ch.sooplive.co.kr
-ch.sooplive.co.kr##.bs-notice_layer
 
-! 2025年8月9日 https://24post.co.kr
-24post.co.kr##.footer_text
+!----------------------japan 网站以及论坛-----------------------
 
 ! 2025年8月11日 https://2chav.com
 2chav.com##.p3_uekotei
@@ -153,7 +331,6 @@ ch.sooplive.co.kr##.bs-notice_layer
 ! 2025年8月28日 https://2chav.com
 2chav.com##.kijinakakoteeei
 2chav.com##.kijinakakoteeei02
-
 
 
 ! 2025年8月12日 https://netflav.com
@@ -170,29 +347,6 @@ twitchav.com,netflav.tv,lijav.com##.ads_head_banner_container
 avtoday.io##div.pt-3.row:nth-of-type(4)
 avtoday.io##div.pt-3.row:nth-of-type(8)
 
-! 2025年8月14日 https://nkvlog.com
-nkvlog.com,nkvod.com,nkvod.me,www.nkvod.com,www.nkvlog.com,lkvod.com,lkvod.org##.flex.ec-ad-img-double.ec-ad-img.box-width
-
-! 2025年8月14日 https://nkvod.org
-nkvod.org,nkvlog.org##.slide-pc
-||iflow-image.myquark.cn/quark-study-iflow/upload/2025/uMsTUH1ii21q2eq/0341996605efc278aebdc2aa11ae132c.gif$image
-
-! 2025年9月3日 https://nkvlog.com
-##[href="https://tncache1-f1.v3mh.com/image/25-08-14/ItiZ07u77.webp"]
-! nkvlog.com,nkvod.me,lkvod.com##.ds-adif-b\{ADIF2\}.ds-adif-a\{ADIF1\}.ec-ad-img.box-width
-
-! 2025年10月9日 https://nkvlog.com
-nkvlog.com##.slide-pc
-
-! 手机APP电影猎手赌博游戏广告
-||48427934.com^
-||45217791.com^
-||17137246.com^
-||jxnze.cn^
-||80674544.com^
-||ichanton.com^
-||pddhds.com^
-
 
 ! 2025年8月20日 https://javmix.tv openload.mov的live分类以及该分类下无效的空白占位
 javmix.tv,openload.mov##div.home-h:nth-of-type(1)
@@ -204,10 +358,6 @@ javmix.tv,openload.mov,jav.direct##div[style*="max-width: 1000px; width: 92%; he
 
 ! 2025年8月22日 https://jav.direct
 jav.direct##.home-h
-
-
-! 2025年8月20日 https://yandex.ru
-yandex.ru##.Distribution-Popup_visible.Distribution-Popup_location_bottom.Distribution-Popup_animation_bounce.Distribution-Popup_layout_system_narrow_button.Distribution-Popup_motley_white-old.Distribution-Popup
 
 ! 2025年8月21日 https://javdesu.tv
 javdesu.tv##.lg\:px-0.sm\:px-6.px-4.space-y-6.flex-shrink-0.lg\:w-\[25rem\] > .justify-center.flex
@@ -227,16 +377,22 @@ avyuri.com##center:nth-of-type(1)
 avyuri.com##center:nth-of-type(2)
 avyuri.com##.single-video-comments
 
-
 ! 2025年8月26日 https://www.av.gl,https://thisav.biz
 www.av.gl,thisav.biz##center
 
-! 2025年8月26日 屏蔽d1hdrnb0x8uvvb.cloudfront.net类型的广告
-||d*.cloudfront.net^
-
 ! 2025年8月26日 www2.24-jav.com
 ||cdn.24s-jav.com/*.gif$image
-
+! 2026年4月13日 https://www4.24-jav.com
+24-jav.com##.only-cen > center
+24-jav.com##.server
+24-jav.com###custom-promo-popup-overlay
+24-jav.com##.bcm-ads
+! 2026年4月13日 https://www4.24-jav.com屏蔽Facebook的评论插件加快网页加载
+||facebook.com^$domain=24-jav.com
+||connect.facebook.net^$domain=24-jav.com
+! 2026年4月13日 https://www4.24-jav.com 屏蔽所有除了jpg格式以外的图片，即可屏蔽绝大部分广告图片
+||24-jav.com^$image,domain=24-jav.com
+@@||24-jav.com/*.jpg$image,domain=24-jav.com
 
 ! 2025年8月28日 https://youskbe.com
 youskbe.com##.main.container > .row > .col-12
@@ -253,8 +409,7 @@ bi-girl.net##.top_link_half.top_link
 ||livedoor.blogimg.jp^$domain=bi-girl.net
 ||assets.pinterest.com^$domain=bi-girl.net
 
-! 2025年8月30日 屏蔽everia.club的脚本样式，加快加载速度
-||bunny-wp-pullzone-cay6hixg3i.b-cdn.net^$domain=everia.club
+
 
 ! 2025年8月30日 屏蔽buondua.us的广告占位符 来自uBlock filters – Ads和AdGuard Base filter + EasyList 规则由buondua.com延伸出来
 buondua.us##.main-body > div > div[class]:not([class^="item"]):not([class^="article"]):contains(/^Sponsored ads$/)
@@ -263,36 +418,23 @@ buondua.us##.main-body div[class] > .adsbyexoclick:upward(1)
 buondua.us##.main-body div[class]:has(> .adsbyexoclick)
 buondua.us##.view-list > div:not([class]):has(iframe)
 
-! 2025年8月30日 https://xn--hu5bp8ba.com/
-||maxcdn.bootstrapcdn.com^
-||hangeul.pstatic.net^
-||xn--hu5bp8ba.com/uploads/cache/banner/
-짤짤이.com##.main_banner
-||*$font,domain=xn--hu5bp8ba.com,third-party
+! 2025年10月29日 https://cosplayrule34.com
+cosplayrule34.com##div#photo-container.grid- > div > .mx-auto.m-0.p-0 > center > noindex
 
-! 2025年8月30日 https://bamnol.com/ 第三方字体样式屏蔽
-||*$font,domain=bamnol.com,third-party
+popjav.in##div[style*="max-width: 1000px"][style*="width: 92%"][style*="height: 400px"][style*="background-color: #fff"]:has(iframe[src*="campaignId=jp_cn_iframe"])
 
-! 2025年8月30日 https://www.issuya.com/ 第三方字体样式，第三方脚本屏蔽
-||*$font,domain=www.issuya.com,third-party
-||*$script,domain=www.issuya.com,third-party
-||developers.kakao.com^$domain=www.issuya.com
-||cdn.rawgit.com^$domain=www.issuya.com
-
+! 2025年11月6日 https://r18.clickme.net的遮罩
+r18.clickme.net##.idle
+r18.clickme.net##.idle-shadow
 
 ! 2025年8月30日 https://javdb.com/ 第三方脚本样式屏蔽
-||*$script,domain=javdb.com,third-party
+||*$script,domain=javdb.com|javdb574.com|javdb573.com|javdb571.com,third-party
+! 2026年7月24日 https://javdb574.com 年龄确认弹窗
+! javdb574.com##.over18-modal.is-active.modal
+##.over18-modal.is-active.modal
 
 ! 2025年9月8日 https://www.avbase.net 不是广告屏蔽后可以加快加载速度
 ||duga.jp/aff/member/img/api/webservice_88.gif$image,domain=www.avbase.net
-
-! 2025年9月8日 https://www.weblio.jp 屏蔽谷歌认证加快浏览速度
-! ||www.google.com/recaptcha/api.js$domain=www.weblio.jp
-! important：这是一个优先级选项。它赋予了这条规则最高的执行权限，广告拦截器通常遵循“最后匹配的规则生效”的原则，并且有很多白名单规则（例外规则）可能会允许某些脚本加载。important 选项会告诉拦截器：“无论其他规则怎么说（包括任何白名单），都必须执行这条拦截规则，它的优先级最高！”
-! 所以，这部分的作用是：确保拦截一定会成功，防止被其他规则覆盖。
-||www.google.com/recaptcha/api.js$domain=www.weblio.jp,important
-! 2025年9月8日 https://thotfans.com 屏蔽谷歌认证加快浏览速度
-||www.google.com/recaptcha/api.js$domain=thotfans.com,important
 
 
 ! 2025年9月9日 https://rou.video
@@ -302,26 +444,220 @@ rou.video##.my-3.justify-center.flex
 
 ! 2025年9月19日 仅在 av-actress-star.com 强制放行目标链接（优先级最高）优化因规则 ##a[href*="/?aff="][target="_blank"] 导致图片不显示问题
 av-actress-star.com#@#a[href*="/?aff="][target="_blank"]
+av-wiki.net#@#a[href*="/?aff="][target="_blank"]
+
+! 2025年11月24日 屏蔽 今日看料 kanliao 系列网站的广告卡片
+! 规则1：屏蔽标题中包含wrap结构的卡片（完整移除）
+! 规则2：屏蔽标题中包含"热搜 HOT"字样的卡片
+! 规则3：屏蔽作者为"今日看料"的卡片
+! 使用正则表达式匹配域名
+/(www\.)?kanliao\d+\.com/##.post-card-mask:has(.post-card-title:has(> .wrap))
+/(www\.)?kanliao\d+\.com/##.post-card-mask:has(.post-card-title:has-text(热搜 HOT))
+! /(www\.)?kanliao\d+\.com/##.post-card-mask:has(.post-card-info:has-text(今日看料・))
+
+! 2025年11月24日 屏蔽leakedzone网站的广告
+leakedzone.com##.item:has(.btn-play:has-text(Advertisement))
+leakedzone.com##.item:has(a[href*="tantaly.com"])
+leakedzone.com##.item:has(video[src*="/storage/natives/"])
+
+! 2025年9月19日 放行sextb.date 的第三方脚本加载 优化因规则 ||*$script,3p,denyallow=cloudflare.com|cloudflare.net|fastly.net|googleapis.com|jsdelivr.net|stripst.com|strpst.com|datatables.net|jwpcdn.com|example.com,from=javplayer.org|pubjav.com|sextb.date|sextb.net 导致视频脚本无法加载 本地自定义规则的优先级高于订阅规则
+@@||*$script,3p,denyallow=cloudflare.com|cloudflare.net|fastly.net|googleapis.com|jsdelivr.net|stripst.com|strpst.com|datatables.net|jwpcdn.com|example.com,from=javplayer.org|pubjav.com|sextb.date|sextb.net
+
+
+! 2026年1月10日 https://cn.myjav.tv xchina小黄书旗下视频网站的广告拦截提示窗
+cn.myjav.tv##.show.content-overlay
+
+! 2026年6月15日 http://665028.xyz hsck
+! 播放器广告 网页元素类名 若站长更改会失效，需要更新维护，下面那条规则已经可以实现同样效果
+##.vp-adcard
+! 此规则全局通用 屏蔽“任何链接的地址里如果包含 .top（比如 xxx.top），那么这个链接里直接包含的图片就给我藏起来。”
+##a[href*=".top"] > img
+! 赌博gif广告
+! 此规则全局通用 屏蔽“任何链接（<a>）的地址里如果出现了 xn-- 这四个字符，那么这个链接里直接包含的图片（<img>）就给我藏起来。”
+##a[href*="xn--"] > img
+! 放行hsck的视频计数脚本，解决视频无法播放问题，是这个规则里面的问题ru ru ua ua uz uz kz kz: RU AdList
+@@/count.php$xhr
+
+
+! 2026年7月2日 51cg的视频播放器播放5s广告
+! 该句仅屏蔽广告图片，框架还在
+! ##.dplayer-pre-img
+! 该句屏蔽广告框架，广告连播放器都屏蔽，广告结束后也就是5s后，出现播放器
+! ##.dplayer-paused.dplayer-pre-clickable.dplayer-pre-playing.dplayer
+! 2026年9月24日
+! EasyPrivacy更新后，/eventtracking/* 这个规则专门解决了这个问题
+ 
+
+
+! 2026年7月2日 https://njavtv.com 播放页的第三方网站导航跳转版块
+njavtv.com##.gap-2.grid-cols-2.grid.text-nord14.list-none.mb-4
+
+
+! 2026年8月31日 https://mjv015.com 18av底部图片栏
+mjv015.com##.ut1_img_content_js
+
+! 2026年9月25日 https://avbase.app
+! 播放页下方广告栏
+! avbase.app##.min-w-0.space-y-\[var\(--space-section\)\] > .panel-block
+! avbase.app###main-content > .space-y-\[var\(--space-section\)\] > .panel-block
+! 搜索页顶部栏广告  
+avbase.app##.mb-\[var\(--space-section\)\].p-3.bg-surface.rounded-thumb
+! 分类页顶部栏广告 
+avbase.app##.mb-\[var\(--space-row\)\].p-3.bg-surface.rounded-thumb
 
 
 
-! 2025年10月15日 https://www.akysw.com 播放器广告
-! ||img.meituan.net/portalweb/9441e53711016caa1f0d7ee8fae68db9817340.gif$all
-! ||img10.360buyimg.com/ling/jfs/t1/350499/14/21846/235694/004fac02F96437484/0129605add306dc5.webp$all
-||img10.360buyimg.com^$all,domain=akysw.com|www.v.qq.comiqiyi.com.ggvip.click
-||img.meituan.net^$all,domain=akysw.com|www.v.qq.comiqiyi.com.ggvip.click
-akysw.com##.player-news
 
 
-! 2025年10月15日 https://www.zhenlang.cc
-www.zhenlang.cc##.clearfix.ads_index.pannel
 
-! 2025年10月29日 https://cosplayrule34.com
-cosplayrule34.com##div#photo-container.grid- > div > .mx-auto.m-0.p-0 > center > noindex
+!----------------------影视直播-----------------------
 
-popjav.in##div[style*="max-width: 1000px"][style*="width: 92%"][style*="height: 400px"][style*="background-color: #fff"]:has(iframe[src*="campaignId=jp_cn_iframe"])
+! 2025年7月10日 https://www.zxzjys.com 在线之家
+/^https:\/\/(www\.)?zxzjys\.com\/[0-9]+\.gif/$from=zxzjys.com
 
-! 2025年11月6日 https://r18.clickme.net
-r18.clickme.net##.idle
-r18.clickme.net##.idle-shadow
+! 2025年7月13日 手机影视APP开屏广告
+||021huaying.com^
+
+! 2026年02月26日 https://www.akysw.com 爱看影视 播放器广告
+bxyvod.pro##.player-news
+! 2026年05月15日 https://www.akysw.com 播放器广告 优化规则，直接屏蔽由这个网址发起的任何图片，不论域名
+
+$image,domain=videopalyer.bxyvod.pro
+
+! 2026年5月15日 https://www.akysw.com 侧边栏资讯栏目
+bxyvod.pro##.tim-box.wap-diy-vod-d
+
+
+
+
+! 2026年5月17日 https://www.rebozj.art 热播之家 首页广告
+www.rebozj.*##.t-img-box
+
+! 2026年5月11日 https://nmsp6.cc 搜片旗下柠檬影视 广告gif图
+||nmsp*.cc/*.gif$image
+
+! 2026年5月15日 https://bbys.app 多多影视 布布影视 3Q影视 赌博gif 
+||dduotv01.top/*.gif$image
+! 2026年5月26日 https://dduotv01.top 多多影视 布布影视 3Q影视 右下角赌博弹窗
+! dduotv01.top##.global-desktop-ad
+##.global-desktop-ad
+! 2026年5月26日 https://dduotv01.top 隐藏 多多影视 布布影视 3Q影视以gif图片占据的页面元素，多为广告元素，##[href^="https://www.ym24.cc"]效果一样，所以此处直接注释
+! bubutv.top##[src$=".gif"]
+
+! 2026年5月26日 隐藏 布布影视 3Q影视以赌博广告https://www.ym24.cc为跳转链接的页面元素，多为广告元素 并且是全局的不仅仅对布布影视有效
+
+! 精确匹配 [href="..."]：必须完完全全一样，多一个斜杠、少一个斜杠、多一个问号、甚至大小写不同（虽然域名不区分，但路径区分）都会失效。
+! ##[href="https://www.ym24.cc"]
+
+! 前缀匹配 [href^="..."]：只要链接以这个字符串开头，后面跟任何内容如：斜杠、问号（包括空）都算匹配
+! 此句全局生效
+##[href^="https://www.ym24.cc"]
+
+! 2026年6月8日 https://www.bzzdyy.com 发现的开云棋牌广告 此句全局生效
+##[href^="https://www.k6858.com"]
+! 2026年6月8日 看片狂人 发现的开云棋牌广告 此句全局生效
+##[href^="http://520267.com"]
+
+! 2026年6月8日 https://www.ece8.com 右下角弹窗
+! www.ece8.com##.all-site-float-ad
+! 2026年6月14日 https://www.ijugo.com 右下角弹窗
+! www.ijugo.com##.all-site-float-ad
+
+! 2026年6月14日 https://www.wzwzs.com 屏蔽易看影视同系列影院的右下角弹窗
+##[href="https://avfuck.top"]
+##.all-site-float-ad
+! 2026年8月25日 https://www.lufys.com 屏蔽易看影视同系列影院的首页下方的影视资讯栏
+##div.animated.fadeInUp.wow.box-width:nth-of-type(12)
+
+! 2026年6月8日 https://www.yxxq1.cc 映像星球
+! 底部遮挡广告栏
+/(www\.)?yxxq\d+\.cc/##.is-visible.mxpro-app-footer-ad
+! 播放页热播影片栏广告卡片
+/(www\.)?yxxq\d+\.cc/##.module-poster-items-base.module-items > .mac-ad-card--mxpro.mac-ad-card.module-item.module-poster-item
+! 播放页网盘资源上方广告版块
+/(www\.)?yxxq\d+\.cc/##.mac-ad-slot-play_below.mac-ad--qidian-play-below.mac-ad
+! 首页热播影片栏广告卡片
+/(www\.)?yxxq\d+\.cc/##.mac-ad-card--mxpro.mac-ad-card.module-item.module-poster-item
+! 首页正在热映下方广告版块
+/(www\.)?yxxq\d+\.cc/##.mxpro-home-after-hot
+! 详情页标题下方广告版块
+/(www\.)?yxxq\d+\.cc/##.mxpro-detail-info-ad--pc.mxpro-detail-info-ad
+! 详情页选集上方广告版块
+/(www\.)?yxxq\d+\.cc/##.mxpro-detail-cpa-boost
+! 左侧导航页广告版块
+/(www\.)?yxxq\d+\.cc/##li.mxpro-nav-special--pink.mxpro-nav-special.navbar-item.swiper-slide > .links
+! 搜索结果页第一个结果是广告版块
+/(www\.)?yxxq\d+\.cc/##.mac-ad-card--mxpro-search.mac-ad-card--mxpro.mac-ad-card.module-item.module-card-item
+
+! 2026年6月19日 https://www.kanfantv.com 看番tv 页面中间广告横幅
+www.kanfantv.com##.min-h-screen.relative > div > .py-md.px-margin
+! 2026年6月19日 https://www.kanfantv.com
+www.kanfantv.com##section.py-md.px-margin:nth-of-type(2)
+
+! 开云体育
+! --- 针对文字和常规属性 ---
+##a[title*="开云体育"]
+##img[alt*="开云体育"]
+##img[title*="开云体育"]
+
+! --- 针对链接和图片地址特征 ---
+##a[href*="kaiyun"]
+##a[href*="kysports"]
+! 这句可以移除占位符
+##div:has(> a[href*="kaiyun"], > a[href*="kysports"])
+##img[src*="kaiyun"]
+##img[src*="kysports"]
+
+! --- 针对针对跳转域名拦截 ---
+##a[href*="hy1365.com"]
+! https://www.cz4k.com/ 来自厂长资源首页轮播
+##div:has(> a[href*="hy1365.com"])
+! ##div.swiper-slide:has(> a[href*="hy1365.com"])
+
+! 2025年12月12日 https://live.douyin.com
+live.douyin.com###EcmoCardLayout
+
+! 2025年12月12日 https://www.qwzb1.com
+www.qwzb1.com##div.el-overlay:nth-of-type(4)
+
+! 2026年2月27日 https://www.doubao.com
+www.doubao.com##.justify-center.w-full.min-h-150.flex
+
+
+
+! 2026年7月24日 https://w36895-260628.zhibo988.com 198直播的注册登录提示
+w36895-260628.zhibo988.com##div.el-overlay:nth-of-type(4)
+
+
+
+
+
+!----------------------NSFW-----------------------
+
+
+! 2026年5月6日 https://fappeningbook.com
+fappeningbook.com##.my-gallery > li.wp_xsize_class > [href="https://w1.fappeningbook.com"]
+
+! 2025年7月29日 https://spankbang.com
+spankbang.com##.vjs-paused-banner-ad-container
+
+! ##img[title="广告赞助"][alt="广告赞助"]
+
+
+! 解决部分网站如：pornavhd.com，sexbjcam.com的播放线路问题，直接屏蔽默认线路，快速加载备用线路
+||tiktokcdn.com^$xhr,domain=recordplay.biz|playrecord.biz
+
+! 2026年8月6日 https://news.qq.com 腾讯新闻文章页的相关推荐，多为自媒体营销号
+news.qq.com###recommend
+
+! 2026年8月6日 https://news.qq.com 腾讯新闻文章页的精选视频，自动播放影响观感
+news.qq.com##.qqcom-jxvideo
+
+! 2026年8月12日 https://news.qq.com 腾讯新闻首页右侧的热门应用推荐，下载客户端提示，客户端下载按钮
+news.qq.com##.PSzsvQrYB231yukTo2eK
+news.qq.com##.qAQJm2VqRz__nGlGj2cg
+news.qq.com##.channel-right-sticky
+
+! 2026年11月1日 https://budayang-20261058.rbjpsp.com
+budayang-20261058.rbjpsp.com##.tile-slot.surface-slot
 
