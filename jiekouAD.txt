@@ -36,6 +36,11 @@
 @@||lf-flow-web-cdn.doubao.com^*/ad.$script
 
 
+
+
+
+
+
 !----------------------谷歌认证-----------------------
 
 ! 2025年9月8日 https://www.weblio.jp 屏蔽谷歌认证加快浏览速度
@@ -303,6 +308,14 @@ av19.live##.sidebar-ads
 ! 2026年11月3日 https://pornhub-2026102.dgav39.com! 手机端顶部gif广告
 ##.surface-slot.tile-slot
 
+! 2026年11月16日 https://hgdj-2026114.rbjpsp.xyz 神级导航 黄果短剧的置顶gif广告版块 
+###xsg-product-header
+
+! 2026年11月16日 https://91crdjai-2026114.rbjpsp.xyz 神级导航 黄果短剧的播放器下方gif广告版块 
+###xsg-player-icons
+
+
+
 
 ! 2025年8月2日 神级导航的广告导航栏图片域名
 ||aliyun.png-0329.ccjjdwt.com^
@@ -477,13 +490,17 @@ cn.myjav.tv##.show.content-overlay
 ! 2026年6月15日 http://665028.xyz hsck
 ! 播放器广告 网页元素类名 若站长更改会失效，需要更新维护，下面那条规则已经可以实现同样效果
 ##.vp-adcard
-! 此规则全局通用 屏蔽“任何链接的地址里如果包含 .top（比如 xxx.top），那么这个链接里直接包含的图片就给我藏起来。”
+! 此规则全局通用 屏蔽“任何链接的地址里如果包含 .top（比如 xxx.top），那么这个链接里直接包含的图片就给我藏起来。”思路来源hsck
 ##a[href*=".top"] > img
+! 此规则全局通用 屏蔽“任何链接的地址里如果包含 .vip（比如 xxx.vip），那么这个链接里直接包含的图片就给我藏起来。”思路来源黄桃短剧aihuangdou.com
+##a[href*=".vip"] > img
 ! 赌博gif广告
 ! 此规则全局通用 屏蔽“任何链接（<a>）的地址里如果出现了 xn-- 这四个字符，那么这个链接里直接包含的图片（<img>）就给我藏起来。”
 ##a[href*="xn--"] > img
 ! 放行hsck的视频计数脚本，解决视频无法播放问题，是这个规则里面的问题ru ru ua ua uz uz kz kz: RU AdList
 @@/count.php$xhr
+
+
 
 
 ! 2026年7月2日 51cg的视频播放器播放5s广告
@@ -512,7 +529,8 @@ avbase.app##.mb-\[var\(--space-section\)\].p-3.bg-surface.rounded-thumb
 ! 分类页顶部栏广告 
 avbase.app##.mb-\[var\(--space-row\)\].p-3.bg-surface.rounded-thumb
 
-
+! 2026年11月16日 aihuangdou.com 黄桃短剧广告
+##[data-ssp-shell]
 
 
 
